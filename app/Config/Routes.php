@@ -31,27 +31,7 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/access', 'Access::index');
-$routes->get('/unit', 'Unit::index');
-$routes->get('/employee', 'Employee::index');
-$routes->get('/employee/parent', 'Employee::employeeByParent');
-// $routes->get('/tracking', 'Tracking::index');
-// $routes->get('/tracking/(:any)', 'Tracking::show/$1');
-$routes->post('/upload', 'Tracking::importCsvToDb');
-$routes->get('/lookup', 'Lookup::index');
-$routes->post('/lookup/detail', 'Lookup::show');
-// $routes->post('/save', 'Tracking::create');
-
-// $routes->get('/inbox/unitid/(:any)', 'Tracking::show/$1');
-
-$routes->presenter('tracking');
-$routes->get('/removefile', 'Tracking::removeUnusedFile');
-$routes->presenter('inbox'); 
-$routes->post('/inbox/log', 'Inbox::log');
-$routes->post('/inbox/show', 'Inbox::showData');
-$routes->get('/parent', 'Unknown::unitParent');
-$routes->presenter('unknown');
-$routes->presenter('outbox');
+$routes->get('/home', 'Home'); 
 
 
 /*
