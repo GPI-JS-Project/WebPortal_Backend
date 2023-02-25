@@ -1,0 +1,80 @@
+CRITICAL - 2023-02-17 07:55:09 --> Call to undefined method PhpOffice\PhpSpreadsheet\Spreadsheet::getCell()
+in APPPATH\Controllers\Tracking.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-17 07:56:05 --> Call to undefined method PhpOffice\PhpSpreadsheet\Reader\Xlsx::getCell()
+in APPPATH\Controllers\Tracking.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-17 07:58:50 --> mysqli_sql_exception: Unknown column 'indexNumber' in 'where clause' in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelTracking.php(152): CodeIgniter\Model->__call('get', Array)
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(113): App\Models\ModelTracking->validateDumplicate('T-1/MB.04/DJB.M...', 'SDB_2023_01_31....', 1)
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#12 {main}
+CRITICAL - 2023-02-17 07:58:50 --> Unknown column 'indexNumber' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `v_tracking`
+WHERE `number` = :number:
+AND `indexNumber` = :indexNumber:
+AND `fileName` = :fileName:', [...], false)
+ 2 SYSTEMPATH\Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\ModelTracking.php(152): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\Tracking.php(113): App\Models\ModelTracking->validateDumplicate('T-1/MB.04/DJB.M/2023', 'SDB_2023_01_31.xlsx', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-17 08:13:53 --> mysqli_sql_exception: Unknown column 'fileName' in 'where clause' in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelTracking.php(152): CodeIgniter\Model->__call('get', Array)
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(113): App\Models\ModelTracking->validateDumplicate('T-1/MB.04/DJB.M...', 'SDB_2023_01_31....', 1)
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#12 {main}
+CRITICAL - 2023-02-17 08:13:53 --> Unknown column 'fileName' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `v_tracking`
+WHERE `number` = :number:
+AND `indexNumber` = :indexNumber:
+AND `fileName` = :fileName:', [...], false)
+ 2 SYSTEMPATH\Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\ModelTracking.php(152): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\Tracking.php(113): App\Models\ModelTracking->validateDumplicate('T-1/MB.04/DJB.M/2023', 'SDB_2023_01_31.xlsx', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-17 08:52:44 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-02-17 08:59:09 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

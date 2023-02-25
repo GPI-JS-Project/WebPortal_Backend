@@ -1,0 +1,137 @@
+CRITICAL - 2023-02-02 14:22:06 --> Call to undefined method App\Models\ModelUnit::validateDumplicate
+in SYSTEMPATH\Model.php on line 841.
+ 1 APPPATH\Controllers\Tracking.php(172): CodeIgniter\Model->__call('validateDumplicate', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 14:22:24 --> Call to undefined method App\Models\ModelUnit::validateDumplicate
+in SYSTEMPATH\Model.php on line 841.
+ 1 APPPATH\Controllers\Tracking.php(172): CodeIgniter\Model->__call('validateDumplicate', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 14:34:04 --> Undefined variable $unitData
+in APPPATH\Controllers\Tracking.php on line 268.
+ 1 APPPATH\Controllers\Tracking.php(268): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $unitData', 'APPPATH\\Controllers\\Tracking.php', 268)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 14:34:36 --> Undefined variable $unitData
+in APPPATH\Controllers\Tracking.php on line 268.
+ 1 APPPATH\Controllers\Tracking.php(268): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $unitData', 'APPPATH\\Controllers\\Tracking.php', 268)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 15:06:40 --> array_chunk(): Argument #2 ($length) must be greater than 0
+in APPPATH\Controllers\Tracking.php on line 304.
+ 1 APPPATH\Controllers\Tracking.php(304): array_chunk([], 0, true)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 15:22:29 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Tracking.php on line 306.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->create()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 15:38:30 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Tracking.php on line 306.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->create()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 15:40:33 --> Undefined array key "number"
+in APPPATH\Controllers\Tracking.php on line 306.
+ 1 APPPATH\Controllers\Tracking.php(306): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "number"', 'APPPATH\\Controllers\\Tracking.php', 306)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 15:46:17 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Tracking.php on line 306.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->create()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 16:02:47 --> Undefined variable $number
+in APPPATH\Controllers\Tracking.php on line 311.
+ 1 APPPATH\Controllers\Tracking.php(311): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $number', 'APPPATH\\Controllers\\Tracking.php', 311)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-02 16:03:21 --> Undefined property: stdClass::$desc
+in APPPATH\Controllers\Tracking.php on line 329.
+ 1 APPPATH\Controllers\Tracking.php(329): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$desc', 'APPPATH\\Controllers\\Tracking.php', 329)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-02 20:45:54 --> Error connecting to the database: mysqli_sql_exception: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('mailtrackminerb...', 'n1571149_mailtr...', 'mailtracking202...', 'n1571149_testma...', 3306, '', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelOtentikasi.php(17): CodeIgniter\BaseModel->first()
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Helpers\jwt_helper.php(22): App\Models\ModelOtentikasi->getEmployee('111111111111111...', '111111111111111...')
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Filters\FilterJwt.php(22): validateJWT('eyJ0eXAiOiJKV1Q...')
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('tracking', 'before')
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelOtentikasi.php(17): CodeIgniter\BaseModel->first()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Helpers\jwt_helper.php(22): App\Models\ModelOtentikasi->getEmployee('111111111111111...', '111111111111111...')
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Filters\FilterJwt.php(22): validateJWT('eyJ0eXAiOiJKV1Q...')
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('tracking', 'before')
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#13 {main}
+CRITICAL - 2023-02-02 20:45:54 --> Unable to connect to the database.
+Main connection [MySQLi]: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `v_access`
+WHERE `employeeId` = :employeeId:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\ModelOtentikasi.php(17): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Helpers\jwt_helper.php(22): App\Models\ModelOtentikasi->getEmployee('111111111111111111', '111111111111111111')
+ 7 APPPATH\Filters\FilterJwt.php(22): validateJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuaXAiOiIxMTExMTExMTExMTExMTExMTEiLCJwYXNzd29yZCI6IjExMTExMTExMTExMTExMTExMSIsImlhdCI6MTY3NTM5MDc1NywiZXhwIjoxNjc1Mzk0MzU3fQ.OLbTfiQdv1B2n7gSzQ8gju18j7tzfwkDwKl2ergl5pU')
+ 8 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 9 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('tracking', 'before')
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

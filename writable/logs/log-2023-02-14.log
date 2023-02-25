@@ -1,0 +1,565 @@
+CRITICAL - 2023-02-14 00:03:33 --> Undefined variable $listData
+in APPPATH\Controllers\Tracking.php on line 264.
+ 1 APPPATH\Controllers\Tracking.php(264): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $listData', 'APPPATH\\Controllers\\Tracking.php', 264)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-14 00:03:57 --> Undefined variable $responseData
+in APPPATH\Controllers\Tracking.php on line 264.
+ 1 APPPATH\Controllers\Tracking.php(264): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $responseData', 'APPPATH\\Controllers\\Tracking.php', 264)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-14 00:05:09 --> mysqli_sql_exception: Duplicate entry '9' for key 'PRIMARY' in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', NULL, false)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2178): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelTracking.php(108): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(307): App\Models\ModelTracking->saveDataTemp(Array)
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(264): App\Controllers\Tracking->createToTemp(Array)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#13 {main}
+CRITICAL - 2023-02-14 00:05:09 --> Duplicate entry '9' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tracking_temp` (`agendaNumber`, `from`, `ket`, `message`, `note`, `number`, `realDate`, `receiptDate`, `status`, `to`, `trackingid`, `type`, `unitTo`)
+VALUES (\'0001/MB.04//2023\',\'Direktorat Jenderal Mineral dan Batubara\',\'Asli\',\'\',\'Persetujuan RKAB Tahun 2023 PT Adhikara Cipta Mulia (SK IUP OP Nomor 411 Tahun 2011) \',\'T-1/MB.04/DJB.M/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'Direktur PT Adhikara Cipta Mulia\',9,\'Segera\',\'SDB\'), (\'0001/MB.04//2023\',\'Direktorat Jenderal Mineral dan Batubara\',\'Asli\',\'\',\'Persetujuan RKAB Tahun 2023 PT Adhikara Cipta Mulia (SK IUP OP Nomor 411 Tahun 2011) \',\'T-1/MB.04/DJB.M/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'Direktur PT Adhikara Cipta Mulia\',5,\'Segera\',\'SDB\'), (\'0001/MB.04//2023\',\'Direktorat Jenderal Mineral dan Batubara\',\'Asli\',\'\',\'Persetujuan RKAB Tahun 2023 PT Adhikara Cipta Mulia (SK IUP OP Nomor 411 Tahun 2011) \',\'T-1/MB.04/DJB.M/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'Direktur PT Adhikara Cipta Mulia\',9,\'Segera\',\'SDB\'), (\'0001/MB.04//2023\',\'Direktorat Jenderal Mineral dan Batubara\',\'Asli\',\'\',\'Persetujuan RKAB Tahun 2023 PT Adhikara Cipta Mulia (SK IUP OP Nomor 411 Tahun 2011) \',\'T-1/MB.04/DJB.M/2023\',\'01-01-2023\',\'2/1/2023\',\'success\',\'Direktur PT Adhikara Cipta Mulia\',6,\'Segera\',\'SDB\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2178): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\ModelTracking.php(108): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\Tracking.php(307): App\Models\ModelTracking->saveDataTemp([...])
+ 5 APPPATH\Controllers\Tracking.php(264): App\Controllers\Tracking->createToTemp([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-14 00:09:43 --> mysqli_sql_exception: Duplicate entry '16' for key 'PRIMARY' in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', NULL, false)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2178): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelTracking.php(108): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(307): App\Models\ModelTracking->saveDataTemp(Array)
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(264): App\Controllers\Tracking->createToTemp(Array)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#13 {main}
+CRITICAL - 2023-02-14 00:09:43 --> Duplicate entry '16' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tracking_temp` (`agendaNumber`, `from`, `ket`, `message`, `note`, `number`, `realDate`, `receiptDate`, `status`, `to`, `trackingid`, `type`, `unitTo`)
+VALUES (\'0001/MB.04//2023\',\'Direktorat Jenderal Mineral dan Batubara\',\'Asli\',\'\',\'Persetujuan RKAB Tahun 2023 PT Adhikara Cipta Mulia (SK IUP OP Nomor 411 Tahun 2011) \',\'T-1/MB.04/DJB.M/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'Direktur PT Adhikara Cipta Mulia\',7,\'Segera\',\'SDB\'), (\'0002/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Draft Persetujuan RKAB 2023 PT Total Prima Indonesia SK003\',\'2/MB.04/DBM.OP/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DJB\',12,\'Segera\',\'SDB\'), (\'0003/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Persetujuan Rencana Kerja dan Anggaran Biaya (RKAB) Tahun 2023 PT Ifishdeco Tbk\\n\',\'1/MB.04/DBM.OP/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'Direktur Jenderal Mineral dan Batubara\',6,\'Segera\',\'SDB\'), (\'0004/MB.04//2023\',\'Direktorat Jenderal Mineral dan Batubara\',\'Asli\',\'\',\'Persetujuan RKAB Tahun 2023 PT ANTAM Tbk. UBPE Pongkor  (SK IUP OP Nomor 171/1/IUP/PMDN/2020)\',\'T-2/MB.04/DJB.M/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'Direksi PT Aneka Tambang Tbk. UBPE Pongkor\',17,\'Segera\',\'SDB\'), (\'0005/KP.05/21/2023\',\'Biro Sumber Daya Manusia\',\'Asli\',\'\',\'Permohonan Pindah Antar Instansi PNS a.n. Sdri. Jayani Siraung, S.T., M.Si.\',\'T-2224/KP.05/SJP.2/2022\',\'30-12-2022\',\'02-01-2023\',\'success\',\'Sekretaris Direktorat Jenderal Mineral dan Batubara\',10,\'Segera\',\'SDB\'), (\'0006/MB.04//2023\',\'Direktorat Jenderal Mineral dan Batubara\',\'Asli\',\'\',\'Persetujuan RKAB 2023 PT Wijaya Inti Nusantara\',\'B-6/MB.04/DJB.M/2023\',\'01-01-2023\',\'02-01-2023\',\'success\',\'Direksi PT Wijaya Inti Nusantara\',16,\'Segera\',\'SDB\'), (\'0007/MB.04//2023\',\'Direktorat Jenderal Mineral dan Batubara\',\'Asli\',\'\',\'Persetujuan RKAB Tahun 2023 PT Batutua Waykanan Minerals (SK IUP OP Nomor 540/II.720/KEP/II.07/2016)\\n\',\'B-5/MB.04/DJB.M/2023\',\'01-01-2023\',\'02-01-2023\',\'success\',\'Direktur Utama PT Batutua Waykanan Minerals\',15,\'Segera\',\'SDB\'), (\'0008/MB.04//2023\',\'Direktorat Jenderal Mineral dan Batubara\',\'Asli\',\'\',\'Persetujuan RKAB 2023 PT Citra Silika Mallawa\',\'B-4/MB.04/DJB.M/2023\',\'01-01-2023\',\'02-01-2023\',\'success\',\'Direksi PT Citra Silika Mallawa\',19,\'Segera\',\'SDB\'), (\'0009/MB.05/39/2023\',\'PT Internasional Prima Coal \',\'Asli\',\'\',\'Permohonan Persetujuan Rencana Kerja dan Anggaran Biaya (RKAB/e-RKAB) Tahun 2023 IUP Operasi Produksi PT Internasional Prima Coal \',\'218/100.JKT-IPC/E/SRT/XII/2022\',\'31-12-2022\',\'02-01-2023\',\'success\',\'Direktur Jenderal Mineral dan Batubara\',16,\'Segera\',\'SDB\'), (\'0010/MB.06//2023\',\'Direktorat Penerimaan Mineral Dan Batubara\',\'Asli\',\'\',\'Penyampaian Status Piutang Perusahaan\',\'401/MB.06/DBN.PW/2022\',\'31-12-2022\',\'02-01-2023\',\'success\',\'Direktur Pembinaan Pengusahaan Batubara\',13,\'Segera\',\'SDB\'), (\'0011/MB.06//2023\',\'Direktorat Penerimaan Mineral Dan Batubara\',\'Asli\',\'\',\'Penyampaian Status Piutang Perusahaan\',\'402/MB.06/DBN.PW/2022\',\'31-12-2022\',\'02-01-2023\',\'success\',\'Direktur Pembinaan Pengusahaan Mineral\',30,\'Segera\',\'SDB\'), (\'0012/MB.03//2023\',\'Direktorat Pembinaan Program Mineral dan Batubara\',\'Asli\',\'\',\'Penyampaian Surat Permohonan Pengaktifan Modul WIUP Online\',\'2/MB.03/DBP.PW/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Sekretaris Direktorat Jenderal Mineral dan Batubara\',6,\'Segera\',\'SDB\'), (\'0013/MB.05/39/2023\',\'PT. Patongson\',\'Asli\',\'\',\'Permohonan Persetujuan RKAB tahun 2022 PT. Patongson\',\'019/SK-PT.PTS/XII/2022\',\'29-12-2022\',\'02-01-2023\',\'success\',\'DJB\',9,\'Biasa\',\'SDB\'), (\'0014/DL.01//2023\',\'Pusat Pengembangan Sumber Daya Manusia Aparatur\',\'Asli\',\'\',\'Undangan Pembahasan hasil AKD 2023\',\'1.Und/DL.01/BPA/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Sekretaris Badan Geologi; Sekretaris Badan Pengembangan Sumber Daya Manusia ESDM; Sekretaris Direktorat Jenderal Ketenagalistrikan; Sekretaris Direktorat Jenderal Minyak dan Gas Bumi; Kepala Biro Umum; Kepala Biro Sumber Daya Manusia; Sekretaris Badan Pengatur Hilir Minyak dan Gas Bumi; Sekretaris Direktorat Jenderal Energi Baru, Terbarukan, dan Konservasi Energi; Sekretaris Direktorat Jenderal Mineral dan Batubara\',11,\'Sangat Segera\',\'SDB\'), (\'0015/MB.03/39/2023\',\'PT. Gerbano Daya Mandiri\',\'Asli\',\'\',\'Permohonan Wilayah di Luar IUP-OP PT. Gerbano Daya Mandiri\',\'L-166/GDM-1.1/EXT/XII/2022\',\'19-12-2022\',\'02-01-2023\',\'success\',\'DJB\',30,\'Biasa\',\'SDB\'), (\'0016/KP.05//2023\',\'Badan Pengembangan Sumber Daya Manusia Energi dan Sumber Daya Mineral\',\'Asli\',\'\',\'Permohonan Tim Penguji\',\'B-2/KP.05/BPS/2023\',\'01-01-2023\',\'02-01-2023\',\'success\',\'Direktur Jenderal Mineral dan Batubara\',21,\'Sangat Segera\',\'SDB\'), (\'0017/MB.04//2023\',\'Direktorat Jenderal Mineral dan Batubara\',\'Asli\',\'\',\'Persetujuan RKAB Tahun 2023 PT Riota Jaya Lestari\\n(SK IUP OP Nomor 658/DPM-PTSP/XI/2020)\',\'B-13/MB.04/DJB.M/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Direktur PT Riota Jaya Lestari\',28,\'Biasa\',\'SDB\'), (\'0018/MB.04//2023\',\'Direktorat Jenderal Mineral dan Batubara\',\'Asli\',\'\',\'Persetujuan Rencana Kerja dan Anggaran Biaya Tahun 2023 PT Kapuas Prima Coal, Tbk (SK IUP OP Nomor Ek.540/06/III/2012)\\n\',\'B-12/MB.04/DJB.M/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Direktur Utama PT Kapuas Prima Coal, Tbk\',21,\'Segera\',\'SDB\'), (\'0019/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Persetujuan Rencana Kerja dan Anggaran Biaya (RKAB) Tahun 2023 PT. Rohul Energi Indonesia\',\'5/MB.04/DBM.OP/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Direktur Jenderal Mineral dan Batubara\',7,\'Segera\',\'SDB\'), (\'0020/MB.05//2023\',\'Direktorat Pembinaan Pengusahaan Batubara\',\'Asli\',\'\',\'RKAB PT Putra Hulu Lematang\',\'6/MB.05/DBB.OP/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Sekretaris Direktorat Jenderal Mineral dan Batubara\',16,\'Segera\',\'SDB\'), (\'0021/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Persetujuan RKAB Tahun 2023 PT Babel Surya Alam Lestari\',\'3/MB.04/DBM.OP/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Direktur Jenderal Mineral dan Batubara\',30,\'Segera\',\'SDB\'), (\'0022/MB.05//2023\',\'Direktorat Pembinaan Pengusahaan Batubara\',\'Asli\',\'\',\'Permintaan Update MOMI a.n PT Sarana Sandmas Jaya Sakti\',\'4/MB.05/DBB.PU/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'DBP\',24,\'Segera\',\'SDB\'), (\'0023/MB.05//2023\',\'Direktorat Pembinaan Pengusahaan Batubara\',\'Asli\',\'\',\'Hasil Rapat Penyusunan Ketentuan Mengenai Biaya Minimum Pengembangan dan Pemberdayaan Masyarakat (PPM) \',\'5/MB.05/DBB.HK/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Sekretaris Direktorat Jenderal Mineral dan Batubara\',25,\'Biasa\',\'SDB\'), (\'0024/MB.05//2023\',\'Direktorat Pembinaan Pengusahaan Batubara\',\'Asli\',\'\',\'Hasil Tindak Lanjut Pembahasan PPLB Pengelolaan Lingkungan dan Aspek Keselamatan Pertambangan antara PT Bara Pramulya Abadi dan PT Ciracap Sumber Prima\',\'B-2/MB.05/DBB.HK/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Direktur PT Bara Pramulya Abadi; Direktur PT Ciracap Sumber Prima\',23,\'Segera\',\'SDB\'), (\'0025/MB.05//2023\',\'Direktorat Pembinaan Pengusahaan Batubara\',\'Asli\',\'\',\'Permohonan Evaluasi Revisi Dokumen Studi Kelayakan PT Berau Coal Site Gurimbang\',\'3/MB.05/DBB.PE/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Direktur Teknik dan Lingkungan Mineral dan Batubara\',23,\'Segera\',\'SDB\'), (\'0026/MB.05//2023\',\'Direktorat Pembinaan Pengusahaan Batubara\',\'Asli\',\'\',\'Permohonan Evaluasi Revisi Dokumen Studi Kelayakan PT Berau Coal Site Binungan\',\'2/MB.05/DBB.PE/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Direktur Teknik dan Lingkungan Mineral dan Batubara\',28,\'Segera\',\'SDB\'), (\'0027/MB.05//2023\',\'Direktorat Pembinaan Pengusahaan Batubara\',\'Asli\',\'\',\'Permohonan Evaluasi Ketiga Revisi Dokumen Studi Kelayakan PT Indomining\',\'1/MB.05/DBB.PE/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'DBT\',22,\'Segera\',\'SDB\'), (\'0028/MB.05//2023\',\'Direktorat Pembinaan Pengusahaan Batubara\',\'Asli\',\'\',\'Persetujuan Tekno-Ekonomi Revisi Studi Kelayakan\\nPT Mustika Indah Abadi\',\'B-1/MB.05/DBB.PE/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Direktur PT Mustika Indah Abadi\',11,\'Biasa\',\'SDB\'), (\'0029/MB.07//2023\',\'Direktorat Teknik dan Lingkungan Mineral dan Batubara\',\'Asli\',\'\',\'Rapat Rencana Kegiatan Pemagangan PPNS\',\'1437/MB.07/DBT.KP/2022\',\'31-12-2022\',\'02-01-2023\',\'success\',\'Sekretaris Direktorat Jenderal Mineral dan Batubara\',28,\'Biasa\',\'SDB\'), (\'0030/MB.07//2023\',\'Direktorat Teknik dan Lingkungan Mineral dan Batubara\',\'Asli\',\'\',\'Hasil Evaluasi/Tanggapan atas Permohonan Pendaftaran IUP PT Gerbang Anugrah Perdana ke dalam database MODI\',\'1/MB.07/DBT/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Direktur Pembinaan Pengusahaan Batubara\',5,\'Segera\',\'SDB\'), (\'0031/MB.07//2023\',\'Direktorat Teknik dan Lingkungan Mineral dan Batubara\',\'Asli\',\'\',\'Permohononan Dukungan Apresiasi Pemenang Lomba Bulan K3 Nasional Tahun 2023\\n\',\'2/MB.07/DBT.KP/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Sekretaris Direktorat Jenderal Mineral dan Batubara\',14,\'Biasa\',\'SDB\'), (\'0032/MB.07//2023\',\'Direktorat Teknik dan Lingkungan Mineral dan Batubara\',\'Asli\',\'\',\'Kejadian Penghentian kegiatan penambangan di Wilayah IUP PT Citra Silika Mallawa oleh masyarakat\',\'1439/MB.07/DBT/2022\',\'31-12-2022\',\'02-01-2023\',\'success\',\'DBM\',26,\'Segera\',\'SDB\'), (\'0033/MB.04/39/2023\',\'PT Anugerah Nusantara Sejahtera\',\'Asli\',\'\',\'Pengantar Dokumen Penyusunan RKAB Tahun 2023 Sekaligus Permohonan Persetujuan RKAB Tahun 2023\',\'106/DIR-ANS/TB/XII/2022\',\'29-12-2022\',\'02-01-2023\',\'success\',\'DJB\',28,\'Biasa\',\'SDB\'), (\'0001/PR.03//2023\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'Asli\',\'\',\'Undangan Rapat\',\'1.Und/PR.03/SDB.L/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Direktur Pembinaan Program Mineral dan Batubara; Direktur Pembinaan Pengusahaan Mineral; Direktur Pembinaan Pengusahaan Batubara; Direktur Penerimaan Mineral dan Batubara; Direktur Teknik dan Lingkungan Mineral dan Batubara; Kepala Balai Besar Pengujian Mineral dan Batubara tekMIRA; Kepala Bagian Umum; Koordinator Hukum; Koordinator Keuangan\',8,\'Segera\',\'SDB\'), (\'0001/PR.03//2023\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'Asli\',\'\',\'Undangan Rapat\',\'1.Und/PR.03/SDB.L/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Direktur Pembinaan Program Mineral dan Batubara; Direktur Pembinaan Pengusahaan Mineral; Direktur Pembinaan Pengusahaan Batubara; Direktur Penerimaan Mineral dan Batubara; Direktur Teknik dan Lingkungan Mineral dan Batubara; Kepala Balai Besar Pengujian Mineral dan Batubara tekMIRA; Kepala Bagian Umum; Koordinator Hukum; Koordinator Keuangan\',12,\'Segera\',\'SDB\'), (\'0001/PR.03//2023\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'Asli\',\'\',\'Undangan Rapat\',\'1.Und/PR.03/SDB.L/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Direktur Pembinaan Program Mineral dan Batubara; Direktur Pembinaan Pengusahaan Mineral; Direktur Pembinaan Pengusahaan Batubara; Direktur Penerimaan Mineral dan Batubara; Direktur Teknik dan Lingkungan Mineral dan Batubara; Kepala Balai Besar Pengujian Mineral dan Batubara tekMIRA; Kepala Bagian Umum; Koordinator Hukum; Koordinator Keuangan\',19,\'Segera\',\'SDB\'), (\'0034/PW.01/21/2023\',\'Biro Keuangan\',\'Asli\',\'\',\'undangan\',\'2.Und/PW.01/SJK.4/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Sekretaris Direktorat Jenderal Mineral dan Batubara; Direktur Pembinaan Program Mineral dan Batubara; Direktur Pembinaan Pengusahaan Mineral; Direktur Penerimaan Mineral dan Batubara\',7,\'Sangat Segera\',\'SDB\'), (\'0035/KU.04/21/2023\',\'Biro Keuangan\',\'Asli\',\'\',\'Undangan Persiapan penyusunan LK Unaudited KESDM TA 2022 dan Pemeriksaan terinci atas LK oleh BPK RI.\\nKamis, 5 Januari 2023 pkl 10.00 WIB (online)\',\'1.Und/KU.04/SJK.4/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Sekretaris Inspektorat Jenderal; Sekretaris Direktorat Jenderal Minyak dan Gas Bumi; Sekretaris Direktorat Jenderal Mineral dan Batubara; Sekretaris Direktorat Jenderal Ketenagalistrikan; Sekretaris Direktorat Jenderal Energi Baru, Terbarukan, dan Konservasi Energi; Sekretaris Badan Geologi; Sekretaris Badan Pengembangan Sumber Daya Manusia ESDM; Sekretaris Badan Pengatur Hilir Minyak dan Gas Bumi; Kepala Biro Umum; Koordinator Perbendaharaan\',26,\'Segera\',\'SDB\'), (\'0036/PW.04/26/2023\',\'Inspektorat II\',\'Asli\',\'\',\'Undangan Rapat Pembahasan Risk Register di lingkungan Ditjen Minerba, Badan Geologi dan Sekretariat Jenderal DEN\',\'2.Und/PW.04/IR.II/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Sekretaris Direktorat Jenderal Mineral dan Batubara; Sekretaris Badan Geologi; Kepala Biro Umum\',10,\'Segera\',\'SDB\'), (\'0037/KP.09//2023\',\'Pusat Pengembangan Sumber Daya Manusia Geologi, Mineral, dan Batubara\',\'Asli\',\'\',\'Sosialisasi Mekanisme Penilaian Uji Kompetensi  Kenaikan Jenjang Inspektur Tambang  \',\'B-1/KP.09/BPGS/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Sekretaris Direktorat Jenderal Mineral dan Batubara; Direktur Teknik dan Lingkungan Mineral dan Batubara; Sekretaris Badan Pengembangan Sumber Daya Manusia ESDM; Kepala Biro Sumber Daya Manusia\',23,\'Segera\',\'SDB\'), (\'0038/MB.07//2023\',\'Direktorat Teknik dan Lingkungan Mineral dan Batubara\',\'Asli\',\'\',\'Laporan Perkembangan Pembahasan Rancangan Peraturan Presiden Pemulihan Kerusakan Lingkungan Akibat Pertambangan\',\'4/MB.07/DBT.PL/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'DJB\',26,\'Segera\',\'SDB\'), (\'0039/MB.07//2023\',\'Direktorat Teknik dan Lingkungan Mineral dan Batubara\',\'Asli\',\'\',\'Tanggapan Surat Gubernur Jambi terkait Bantuan Inspektur \\n Tambang Penempatan Provinsi Jambi dalam Melakukan \\n Pengawasan Angkutan Batubara di Provinsi Jambi\',\'5/MB.07/DBT/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Direktur Pembinaan Pengusahaan Batubara\',13,\'Biasa\',\'SDB\'), (\'0040/MB.07//2023\',\'Direktorat Teknik dan Lingkungan Mineral dan Batubara\',\'Asli\',\'\',\'Tanggapan Rapat Pembahasan Rancangan KepMen Tentang Persetujuan Program Kemitraan PT Timah Tbk\',\'6/MB.07/DBT.SU/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'SDB\',10,\'Segera\',\'SDB\'), (\'0041/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Persetujuan Rencana Kerja dan Anggaran Biaya (RKAB) Tahun 2023 PT Bintani Megah Tata Bersama\\n\',\'6/MB.04/DBM.OP/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Direktur Jenderal Mineral dan Batubara\',23,\'Segera\',\'SDB\'), (\'0042/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Persetujuan RKAB Tahun 2023 PT Gemala Borneo Utama (SK IUP OP Nomor 260.B Tahun 2015)\',\'17/MB.04/DBM.OP/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'DJB\',21,\'Segera\',\'SDB\'), (\'0043/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Permohonan Evaluasi Untuk Peningkatan dan\\nPendaftaran IUP a.n. PT Nila Utama Nusantara\',\'16/MB.04/DBM.PU/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Sekretaris Direktorat Jenderal Mineral dan Batubara; Direktur Pembinaan Program Mineral dan Batubara; Direktur Teknik dan Lingkungan Mineral dan Batubara; Direktur Penerimaan Mineral dan Batubara\',30,\'Segera\',\'SDB\'), (\'0044/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Penyampaian Hasil Evaluasi Permohonan Pendaftaran\\nke Daftar IUP dan IUPK yang Memenuhi Ketentuan\\nPT Bumi Raya Makmur Mandiri\',\'15/MB.04/DBM.PU/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Direktur Jenderal Mineral dan Batubara\',26,\'Segera\',\'SDB\'), (\'0045/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Permohonan Legal Drafting atas Konsep/Net\\nKeputusan Menteri Investasi/Kepala BKPM tentang\\nPermohonan Pengaktifan Kembali IUP Tahap\\nEksplorasi PT Bumi Raya Makmur Mandiri\',\'14/MB.04/DBM.PU/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Sekretaris Direktorat Jenderal Mineral dan Batubara\',15,\'Segera\',\'SDB\'), (\'0046/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Permohonan Cetak Peta SK IUP PT Bumi Raya\\nMakmur Mandiri\',\'13/MB.04/DBM.PU/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Direktur Pembinaan Program Mineral dan Batubara\',18,\'Segera\',\'SDB\'), (\'0047/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Permohonan Evaluasi Untuk Peningkatan dan\\nPendaftaran IUP a.n. PT Bumi Bestari Sejahtera\',\'12/MB.04/DBM.PU/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Sekretaris Direktorat Jenderal Mineral dan Batubara; Direktur Pembinaan Program Mineral dan Batubara; Direktur Teknik dan Lingkungan Mineral dan Batubara; Direktur Penerimaan Mineral dan Batubara\',12,\'Segera\',\'SDB\'), (\'0048/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Permohonan Evaluasi Untuk Peningkatan dan\\nPendaftaran IUP a.n. PT Mahkota Bumi Modern\',\'11/MB.04/DBM.PU/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Sekretaris Direktorat Jenderal Mineral dan Batubara; Direktur Pembinaan Program Mineral dan Batubara; Direktur Teknik dan Lingkungan Mineral dan Batubara; Direktur Penerimaan Mineral dan Batubara\',12,\'Segera\',\'SDB\'), (\'0049/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Persetujuan Rencana Kerja dan Anggaran Biaya (RKAB) Tahun 2023 PT Gag Nikel\',\'10/MB.04/DBM.OP/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Direktur Jenderal Mineral dan Batubara\',9,\'Segera\',\'SDB\'), (\'0050/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Persetujuan Rencana Kerja dan Anggaran Biaya (RKAB) Tahun 2023 PT Sebuku Iron Lateritic Ores\',\'9/MB.04/DBM.OP/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Direktur Jenderal Mineral dan Batubara\',21,\'Segera\',\'SDB\'), (\'0051/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Persetujuan Rencana Kerja dan Anggaran Biaya (RKAB) Tahun 2023 PT Arga Morini Indotama\\n\',\'8/MB.04/DBM.OP/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Direktur Jenderal Mineral dan Batubara\',16,\'Segera\',\'SDB\'), (\'0052/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Persetujuan Rencana Kerja dan Anggaran Biaya (RKAB) Tahun 2023 PT Indrabakti Mustika\',\'7/MB.04/DBM.OP/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'DJB\',26,\'Segera\',\'SDB\'), (\'0053/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Permintaan Kekurangan Persyaratan Surat Keterangan\\nFiskal, Laporan Pelaksanaan Pengelolaan Lingkungan \\nDan Reklamasi PT Kasmar Tiar Raya\',\'T-7/MB.04/DBM.PU/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Direktur Utama PT Kasmar Tiar Raya\',5,\'Segera\',\'SDB\'), (\'0054/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Tanggapan atas Surat Permohonan \\nMelanjutkan Proses Penerbitan IUP Eksplorasi  PT Borneo Permata Silika\\n\',\'T-6/MB.04/DBM.PU/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Direktur PT Borneo Permata Silika\',30,\'Segera\',\'SDB\'), (\'0055/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Tanggapan atas Surat Permohonan \\n Melanjutkan Proses Penerbitan IUP Eksplorasi\\n PT Intan Permata Borneo\',\'T-5/MB.04/DBM.PU/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Direktur PT Intan Permata Borneo\',9,\'Segera\',\'SDB\'), (\'0056/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Permintaan Kelengkapan Persyaratan Sebagai Tindak Lanjut Surat BPK\',\'B-4/MB.04/DBM.PU/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Direksi PT Fadlan Mulia Jaya\',7,\'Segera\',\'SDB\'), (\'0057/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Tanggapan atas Proses Penerbitan \\n IUP Eksplorasi PT Nugra Santana Nusantara\',\'T-3/MB.04/DBM.PU/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Kepala Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu   Provinsi Banten; Kepala Dinas Energi dan Sumber Daya Mineral Provinsi Banten\',8,\'Segera\',\'SDB\'), (\'0058/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Tanggapan Atas Permohonan Petunjuk Percepatan\\nPengadaan Tanah Urug Untuk Proyek Strategis Nasional Tol Yogyakarta - Bawean\\n\',\'T-2/MB.04/DBM.PU/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Pimpinan DPRD Daerah Istimewa Yogyakarta\',21,\'Segera\',\'SDB\'), (\'0059/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Penghapusan Permohonan dari Daftar Akun Perizinan Online Pemerintah Provinsi\\n\',\'T-1/MB.04/DBM.PU/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Kepala Pusat Data dan Teknologi Informasi Energi dan Sumber Daya Mineral\',7,\'Segera\',\'SDB\'), (\'0060/KM.01/21/2023\',\'Biro Komunikasi, Layanan Informasi Publik dan Kerja Sama\',\'Asli\',\'\',\'Pelatihan Sistem Pemantauan Berita Sektor ESDM Rabu, 4 Januari 2023\',\'1.Und/KM.01/SJI.1/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Sekretaris Inspektorat Jenderal; Sekretaris Direktorat Jenderal Minyak dan Gas Bumi; Sekretaris Direktorat Jenderal Ketenagalistrikan; Sekretaris Direktorat Jenderal Mineral dan Batubara; Sekretaris Direktorat Jenderal Energi Baru, Terbarukan, dan Konservasi Energi; Sekretaris Badan Geologi; Sekretaris Badan Pengembangan Sumber Daya Manusia ESDM; Sekretaris Badan Pengatur Hilir Minyak dan Gas Bumi; Kepala Biro Fasilitasi Kebijakan Energi dan Persidangan; Direktur Komunikasi Indonesia Indicator; Leader Central Goverment Media Analyst, Indonesia Indicator\',15,\'Segera\',\'SDB\'), (\'0061/KM.01/21/2023\',\'Biro Komunikasi, Layanan Informasi Publik dan Kerja Sama\',\'Asli\',\'\',\'Pelatihan Sistem Pemantauan Media Sosial Sektor ESDM Kamis, 5 Januari 2023\',\'2.Und/KM.01/SJI.1/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Sekretaris Inspektorat Jenderal; Sekretaris Direktorat Jenderal Minyak dan Gas Bumi; Sekretaris Direktorat Jenderal Ketenagalistrikan; Sekretaris Direktorat Jenderal Mineral dan Batubara; Sekretaris Direktorat Jenderal Energi Baru, Terbarukan, dan Konservasi Energi; Sekretaris Badan Geologi; Sekretaris Badan Pengembangan Sumber Daya Manusia ESDM; Sekretaris Badan Pengatur Hilir Minyak dan Gas Bumi; Kepala Biro Fasilitasi Kebijakan Energi dan Persidangan; Direktur Komunikasi Indonesia Indicator; Leader Central Goverment Media Analyst, Indonesia Indicator\',13,\'Segera\',\'SDB\'), (\'0062/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Persetujuan Rencana Kerja dan Anggaran Biaya (RKAB) Tahun 2023 PT Saka Putra Perkasa\\n\',\'22/MB.04/DBM.OP/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Direktur Jenderal Mineral dan Batubara\',14,\'Segera\',\'SDB\'), (\'0063/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Persetujuan Rencana Kerja dan Anggaran Biaya (RKAB) Tahun 2023 PT Gema Kreasi Perdana\\n\',\'21/MB.04/DBM.OP/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'Direktur Jenderal Mineral dan Batubara\',14,\'Segera\',\'SDB\'), (\'0064/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Persetujuan RKAB Tahun 2023 PT Aneka Tambang Tbk. (UBPE Arinem\\nGarut)\',\'20/MB.04/DBM.OP/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'DJB\',7,\'Segera\',\'SDB\'), (\'0065/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Persetujuan RKAB Tahun 2023 PT Sago Prima Pratama\',\'19/MB.04/DBM.OP/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'DJB\',9,\'Segera\',\'SDB\'), (\'0066/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Laporan Pembatalan Pencabutan IUP Komoditas Mineral serta Pengaktifan IUP Pada Aplikasi MODI\',\'18/MB.04/DBM.PU/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'DJB\',11,\'Segera\',\'SDB\'), (\'0067/MB.03//2023\',\'Direktorat Pembinaan Program Mineral dan Batubara\',\'Asli\',\'\',\'Laporan Rapat Pembahasan Pembahasan Prosedur\\nOperasional Standar Evaluasi Permohonan\\nPerluasan WIUP/WIUPK\',\'4/MB.03/DBP.PW/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'DJB\',18,\'Biasa\',\'SDB\'), (\'0068/MB.03//2023\',\'Direktorat Pembinaan Program Mineral dan Batubara\',\'Asli\',\'\',\'Penyampaian Dokumen Rencana Pengelolaan Mineral dan Batubara Nasional (RPMBN)\',\'B-2/MB.03/DBP.PP/2023\',\'02-01-2023\',\'03-01-2023\',\'success\',\'Sekretaris Direktorat Jenderal Mineral dan Batubara; Direktur Pembinaan Pengusahaan Mineral; Direktur Pembinaan Pengusahaan Batubara; Direktur Teknik dan Lingkungan Mineral dan Batubara; Direktur Penerimaan Mineral dan Batubara; Kepala Balai Besar Pengujian Mineral dan Batubara tekMIRA; Kepala Dinas ESDM seluruh indonesia; Tim Perumus RPMBN; Tim penyunting; Asosiasi Pertambangan\',10,\'Segera\',\'SDB\'), (\'0069/PR.02/21/2023\',\'Biro Perencanaan\',\'Asli\',\'\',\'Permintaan Data Tindak Lanjut Buka Blokir TA 2023.\\n(deadline 6 Januari 2023)\',\'B-3/PR.02/SJR.3/2023\',\'03-01-2023\',\'03-01-2023\',\'success\',\'Kepala Biro Keuangan; Kepala Biro Umum; Kepala Biro Hukum; Kepala Pusat Pengelolaan Barang Milik Negara; Kepala Pusat Data dan Teknologi Informasi Energi dan Sumber Daya Mineral; Sekretaris Inspektorat Jenderal; Sekretaris Direktorat Jenderal Minyak dan Gas Bumi; Kepala Balai Besar Pengujian Minyak dan Gas Bumi LEMIGAS; Sekretaris Direktorat Jenderal Ketenagalistrikan; Sekretaris Direktorat Jenderal Mineral dan Batubara; Kepala Balai Besar Pengujian Mineral dan Batubara tekMIRA; Kepala Biro Umum; Sekretaris Badan Pengembangan Sumber Daya Manusia ESDM; Kepala Pusat Pengembangan Sumber Daya Manusia Ketenagalistrikan, Energi baru, Terbarukan dan Konservasi Energi; Kepala Pusat Pengembangan Sumber Daya Manusia Geologi, Mineral dan Batubara; Direktur Politeknik Energi dan Mineral Akamigas; Kepala Balai Pendidikan dan Pelatihan Tambang Bawah Tanah; Direktur Politeknik Energi dan Pertambangan; Sekretaris Badan Geologi; Kepala Pusat Sumber Daya Mineral, Batubara, dan Panas Bumi; Kepala Pusat Vulkanologi dan Mitigasi Bencana Geologi; Kepala Pusat Air Tanah dan Geologi Tata Lingkungan; Kepala Pusat Survei Geologi; Kepala Balai Besar Survei dan Pemetaan Geologi Kelautan; Kepala Balai Penyelidikan dan Pengembangan Teknologi Kebencanaan Geologi; Kepala Balai Konservasi Air Tanah; Kepala Museum Geologi; Sekretaris Badan Pengatur Hilir Minyak dan Gas Bumi; Sekretaris Direktorat Jenderal Energi Baru, Terbarukan, dan Konservasi Energi; Kepala Balai Besar Survei dan Pengujian KEBTKE\',30,\'Segera\',\'SDB\'), (\'0002/PR.06//2023\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'Asli\',\'\',\'Permohonan Nama Anggota Tim Pengelola Kinerja TA 2023 Unit Eselon II Ditjen Minerba\',\'7/PR.06/SDB.L/2023\',\'03-01-2023\',\'03-01-2023\',\'success\',\'Direktur Pembinaan Program Mineral dan Batubara; Direktur Pembinaan Pengusahaan Mineral; Direktur Pembinaan Pengusahaan Batubara; Direktur Teknik dan Lingkungan Mineral dan Batubara; Direktur Penerimaan Mineral dan Batubara; Kepala Balai Besar Pengujian Mineral dan Batubara tekMIRA; Kepala Bagian Umum; Koordinator Hukum; Koordinator Keuangan\',5,\'Segera\',\'SDB\'), (\'0002/PR.06//2023\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'Asli\',\'\',\'Permohonan Nama Anggota Tim Pengelola Kinerja TA 2023 Unit Eselon II Ditjen Minerba\',\'7/PR.06/SDB.L/2023\',\'03-01-2023\',\'03-01-2023\',\'success\',\'Direktur Pembinaan Program Mineral dan Batubara; Direktur Pembinaan Pengusahaan Mineral; Direktur Pembinaan Pengusahaan Batubara; Direktur Teknik dan Lingkungan Mineral dan Batubara; Direktur Penerimaan Mineral dan Batubara; Kepala Balai Besar Pengujian Mineral dan Batubara tekMIRA; Kepala Bagian Umum; Koordinator Hukum; Koordinator Keuangan\',16,\'Segera\',\'SDB\'), (\'0002/PR.06//2023\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'Asli\',\'\',\'Permohonan Nama Anggota Tim Pengelola Kinerja TA 2023 Unit Eselon II Ditjen Minerba\',\'7/PR.06/SDB.L/2023\',\'03-01-2023\',\'03-01-2023\',\'success\',\'Direktur Pembinaan Program Mineral dan Batubara; Direktur Pembinaan Pengusahaan Mineral; Direktur Pembinaan Pengusahaan Batubara; Direktur Teknik dan Lingkungan Mineral dan Batubara; Direktur Penerimaan Mineral dan Batubara; Kepala Balai Besar Pengujian Mineral dan Batubara tekMIRA; Kepala Bagian Umum; Koordinator Hukum; Koordinator Keuangan\',25,\'Segera\',\'SDB\'), (\'0070/KP.05//2023\',\'Direktorat Jenderal Mineral dan Batubara\',\'Asli\',\'\',\'Permohonan Pengunduran Diri dari PNS an. M. Rifai Pelu\',\'B-15/KP.05/DJB.S/2023\',\'02-01-2023\',\'03-01-2023\',\'success\',\'Sekretaris Jenderal\',13,\'Segera\',\'SDB\'), (\'0071/MB.05//2023\',\'Direktorat Jenderal Mineral dan Batubara\',\'Asli\',\'\',\'Percepatan Perbaikan Jalan Alternatif Angkutan Batubara Jambi\',\'B-14/MB.05/DJB.B/2023\',\'02-01-2023\',\'03-01-2023\',\'success\',\'Gubernur Jambi\',19,\'Segera\',\'SDB\'), (\'0072/MB.04//2023\',\'Direktorat Jenderal Mineral dan Batubara\',\'Asli\',\'\',\'Persetujuan RKAB 2023 PT Total Prima Indonesia SK 003\',\'B-16/MB.04/DJB.M/2023\',\'02-01-2023\',\'03-01-2023\',\'success\',\'Direksi PT Total Prima Indonesia\',5,\'Segera\',\'SDB\'), (\'0073/MB.06//2023\',\'Direktorat Penerimaan Mineral Dan Batubara\',\'Asli\',\'\',\'Verifikasi Kewajiban PNBP PT Pinang Bara Adipratama\',\'1/MB.06/DBN.PW/2023\',\'03-01-2023\',\'03-01-2023\',\'success\',\'Direktur Pembinaan Pengusahaan Batubara\',12,\'Segera\',\'SDB\'), (\'0074/KP.05//2023\',\'Badan Pengembangan Sumber Daya Manusia Energi dan Sumber Daya Mineral\',\'Asli\',\'\',\'Permohonan Tim Penguji\',\'B-3/KP.05/BPS/2023\',\'01-01-2023\',\'03-01-2023\',\'success\',\'Staf Khusus Menteri ESDM Bidang Percepatan Tata Kelola Mineral dan Batubara\',7,\'Sangat Segera\',\'SDB\'), (\'0075/MB.03//2023\',\'Direktorat Pembinaan Program Mineral dan Batubara\',\'Asli\',\'\',\'Penyampaian Evaluasi Permohonan Pendaftaran IUP PT Waegeo Mineral Mining\',\'7/MB.03/DBP.PW/2023\',\'03-01-2023\',\'03-01-2023\',\'success\',\'Direktur Pembinaan Pengusahaan Mineral\',25,\'Segera\',\'SDB\'), (\'0076/MB.04/39/2023\',\'PT. Prima Zircon Perkasa\',\'Asli\',\'\',\'Permohonan Aktivasi MODI\',\'001/PZP/I/2023\',\'02-01-2023\',\'03-01-2023\',\'success\',\'DJB\',27,\'Biasa\',\'SDB\'), (\'0077/BN.09//2023\',\'Balai Besar Pengujian Mineral dan Batubara tekMIRA\',\'Asli\',\'\',\'Permohonan Penghapusan Barang Milik Negara Bongkaran\',\'1/BN.09/DBR.U/2023\',\'03-01-2023\',\'03-01-2023\',\'success\',\'Sekretaris Direktorat Jenderal Mineral dan Batubara\',10,\'Segera\',\'SDB\'), (\'0078/MB.05//2023\',\'Direktorat Pembinaan Pengusahaan Batubara\',\'Asli\',\'\',\' Draf Harga Batubara Acuan (HBA) dan Harga Patokan Batubara (HPB) Bulan Januari 2023\\n\',\'9/MB.05/DBB.OP/2023\',\'03-01-2023\',\'03-01-2023\',\'success\',\'SDB\',6,\'Segera\',\'SDB\'), (\'0079/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Persetujuan Rencana Kerja dan Anggaran Biaya (RKAB)\\nTahun 2023 PT Parenggean Makmur Sejahtera\',\'25/MB.04/DBM.OP/2023\',\'03-01-2023\',\'03-01-2023\',\'success\',\'Direktur Jenderal Mineral dan Batubara\',24,\'Segera\',\'SDB\'), (\'0080/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Persetujuan RKAB Tahun 2023 PT Aneka Tambang Tbk. (UBPB Mempawah)\',\'24/MB.04/DBM.OP/2023\',\'03-01-2023\',\'03-01-2023\',\'success\',\'DJB\',30,\'Segera\',\'SDB\'), (\'0081/MB.04//2023\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'Asli\',\'\',\'Persetujuan Rencana Kerja dan Anggaran Biaya (RKAB) Tahun 2023 PT Wana Kencana Mineral\',\'23/MB.04/DBM.OP/2023\',\'03-01-2023\',\'03-01-2023\',\'success\',\'Direktur Jenderal Mineral dan Batubara\',24,\'Segera\',\'SDB\'), (\'0082/KP.03/21/2023\',\'Biro Sumber Daya Manusia\',\'Asli\',\'\',\'Verifikasi Seleksi Administrasi PPPK Tenaga Teknis KESDM Tahun 2022.\\nJumat, 6 Januari 2023 pkl 14.00 WIB di Gd. Pusat Arsip KESDM, Pondok Ranji, Tangerang Selatan\',\'4.Und/KP.03/SJP.1/2023\',\'03-01-2023\',\'03-01-2023\',\'success\',\'Kepala Pusat Data dan Teknologi Informasi Energi dan Sumber Daya Mineral; Kepala Pusat Pengelolaan Barang Milik Negara; Sekretaris Direktorat Jenderal Minyak dan Gas Bumi; Sekretaris Direktorat Jenderal Ketenagalistrikan; Sekretaris Direktorat Jenderal Mineral dan Batubara; Sekretaris Direktorat Jenderal Energi Baru, Terbarukan, dan Konservasi Energi; Sekretaris Inspektorat Jenderal; Sekretaris Badan Geologi; Sekretaris Badan Pengembangan Sumber Daya Manusia ESDM; Kepala Biro Umum; Sekretaris Badan Pengatur Hilir Minyak dan Gas Bumi; SJP.1; SJP.2; SJP.3\',29,\'Segera\',\'SDB\'), (\'0083/KP.09/21/2023\',\'Biro Sumber Daya Manusia\',\'Asli\',\'\',\'Penyerahan Berkas Penilaian Angka Kredit Jabatan Fungsional.\\n(deadline 16 Januari 2023 pkl 16.00 WIB)\',\'B-8/KP.09/SJP.2/2023\',\'03-01-2023\',\'03-01-2023\',\'success\',\'Kepala Biro Perencanaan; Kepala Biro Organisasi dan Tata Laksana; Kepala Biro Keuangan; Kepala Biro Hukum; Kepala Biro Umum; Kepala Biro Komunikasi, Layanan Informasi Publik, dan Kerja Sama; Kepala Pusat Data dan Teknologi Informasi Energi dan Sumber Daya Mineral; Kepala Pusat Pengelolaan Barang Milik Negara; Sekretaris Inspektorat Jenderal; Sekretaris Direktorat Jenderal Minyak dan Gas Bumi; Sekretaris Direktorat Jenderal Ketenagalistrikan; Sekretaris Direktorat Jenderal Mineral dan Batubara; Sekretaris Direktorat Jenderal Energi Baru, Terbarukan, dan Konservasi Energi; Sekretaris Badan Geologi; Sekretaris Badan Pengembangan Sumber Daya Manusia ESDM; Sekretaris Badan Pengatur Hilir Minyak dan Gas Bumi; Kepala Biro Umum\',18,\'Segera\',\'SDB\'), (\'0084/KP.03/21/2023\',\'Biro Sumber Daya Manusia\',\'Asli\',\'\',\'Persyaratan Pengangkatan Menjadi PNS untuk CPNS KESDM Formasi Tahun 2021.\\n(deadline tanggal 16 Januari 2023)\',\'B-7/KP.03/SJP.1/2023\',\'03-01-2023\',\'03-01-2023\',\'success\',\'Kepala Pusat Data dan Teknologi Informasi Energi dan Sumber Daya Mineral; Kepala Pusat Pengelolaan Barang Milik Negara; Sekretaris Direktorat Jenderal Minyak dan Gas Bumi; Sekretaris Direktorat Jenderal Ketenagalistrikan; Sekretaris Direktorat Jenderal Mineral dan Batubara; Sekretaris Direktorat Jenderal Energi Baru, Terbarukan, dan Konservasi Energi; Sekretaris Inspektorat Jenderal; Sekretaris Badan Geologi; Kepala Biro Umum; Sekretaris Badan Pengembangan Sumber Daya Manusia ESDM; Sekretaris Badan Pengatur Hilir Minyak dan Gas Bumi; SJP.2; SJP.1.1\',26,\'Sangat Segera\',\'SDB\'), (\'0085/KP.03/21/2023\',\'Biro Sumber Daya Manusia\',\'Asli\',\'\',\'Persiapan Verifikasi Seleksi Administrasi PPPK Tenaga Teknis Kementerian ESDM Tahun 2022.\\nKamis, 5 Januari 2023 pkl 10.00 WIB di Gd. Pusat Arsip KESDM, Pondok Ranji, Tangerang Selatan\',\'2.Und/KP.03/SJP.1/2023\',\'03-01-2023\',\'03-01-2023\',\'success\',\'Kepala Pusat Data dan Teknologi Informasi Energi dan Sumber Daya Mineral; Kepala Pusat Pengelolaan Barang Milik Negara; Sekretaris Direktorat Jenderal Minyak dan Gas Bumi; Sekretaris Direktorat Jenderal Ketenagalistrikan; Sekretaris Direktorat Jenderal Mineral dan Batubara; Sekretaris Direktorat Jenderal Energi Baru, Terbarukan, dan Konservasi Energi; Sekretaris Inspektorat Jenderal; Sekretaris Badan Geologi; Sekretaris Badan Pengembangan Sumber Daya Manusia ESDM; Kepala Biro Umum; Sekretaris Badan Pengatur Hilir Minyak dan Gas Bumi; SJP.1; SJP.2; SJP.3\',20,\'Sangat Segera\',\'SDB\'), (\'0086/KP.09//2023\',\'Pusat Pengembangan Sumber Daya Manusia Geologi, Mineral, dan Batubara\',\'Asli\',\'\',\'Sosialisasi Mekanisme Pelaksanaan Uji Kompetensi Kenaikan Jenjang Inspektur Tambang \',\'B-3/KP.09/BPGS/2023\',\'03-01-2023\',\'03-01-2023\',\'success\',\'Kepala Biro Sumber Daya Manusia; Sekretaris Direktorat Jenderal Mineral dan Batubara; Direktur Teknik dan Lingkungan Mineral dan Batubara; Sekretaris Badan Pengembangan Sumber Daya Manusia ESDM; Kepala Pusat Pengembangan Sumber Daya Manusia Aparatur\',9,\'Segera\',\'SDB\'), (\'0087/MB.04/39/2023\',\'PT. Hikari Jeindo\',\'Asli\',\'\',\'Penyampaian RKAB Tahun 2023 PT. Hikari Jeindo\',\'005/RKAB/DIR/I/2023\',\'03-01-2023\',\'03-01-2023\',\'success\',\'DJB\',28,\'Biasa\',\'SDB\'), (\'0088/MB.03//2023\',\'Direktorat Pembinaan Program Mineral dan Batubara\',\'Asli\',\'\',\'Rapat Penyusunan SKP DBP Tahun 2023\',\'2.Und/MB.03/DBP.PI&KS/2023\',\'03-01-2023\',\'03-01-2023\',\'success\',\'SDB; DBP.PP; DBP.P3; DBP.PW\',19,\'Segera\',\'SDB\'), (\'0089/MB.05//2023\',\'Direktorat Pembinaan Pengusahaan Batubara\',\'Asli\',\'\',\'Persetujuan Revisi Tekno-Ekonomi Studi Kelayakan\\nPT Mutiara Etam Coal\',\'B-10/MB.05/DBB.PE/2023\',\'03-01-2023\',\'03-01-2023\',\'success\',\'Direktur PT Mutiara Etam Coal\',27,\'Segera\',\'SDB\'), (\'0090/DI.01/21/2023\',\'Pusat Data dan Teknologi Informasi Energi dan Sumber Daya Mineral\',\'Asli\',\'\',\'Rapat Pembahasan Pemutakhiran Faktor Konversi Batubara\',\'1.Und/DI.01/SJD.2/2023\',\'03-01-2023\',\'03-01-2023\',\'success\',\'Sekretaris Direktorat Jenderal Mineral dan Batubara; Sekretaris Direktorat Jenderal Energi Baru, Terbarukan, dan Konservasi Energi; Direktur Pembinaan Pengusahaan Batubara; Kepala Biro Fasilitasi Penanggulangan Krisis dan Pengawasan Energi; Kepala Balai Besar Pengujian Mineral dan Batubara tekMIRA\',9,\'Segera\',\'SDB\'), (\'0091/MB.05//2023\',\'Direktorat Pembinaan Pengusahaan Batubara\',\'Asli\',\'\',\'Evaluasi Dokumen Studi Kelayakan\\nPT Putra Banua Tapin\',\'B-9/MB.05/DBB.PE/2023\',\'03-01-2023\',\'03-01-2023\',\'success\',\'Direktur PT Putra Banua Tapin\',11,\'Biasa\',\'SDB\'), (\'0092/MB.05//2023\',\'Direktorat Pembinaan Pengusahaan Batubara\',\'Asli\',\'\',\'Tindak lanjut evaluasi perbaikan kedua revisi dokumen tekno-ekonomi studi kelayakan PT Truba Bara Banyu Enim\',\'B-11/MB.05/DBB.PE/2023\',\'03-01-2023\',\'03-01-2023\',\'success\',\'Direktur PT Truba Bara Banyu Enim\',28,\'Segera\',\'SDB\'), (\'0093/MB.05//2023\',\'Direktorat Pembinaan Pengusahaan Batubara\',\'Asli\',\'\',\'Tindak lanjut evaluasi perbaikan dokumen revisi studi kelayakan  CV Betuah\\n\',\'B-8/MB.05/DBB.PE/2023\',\'03-01-2023\',\'03-01-2023\',\'success\',\'Direktur CV Betuah\',24,\'Segera\',\'SDB\'), (\'0094/MB.05//2023\',\'Direktorat Pembinaan Pengusahaan Batubara\',\'Asli\',\'\',\'Perbaikan Ketiga Dokumen Studi Kelayakan\\nPT Bina Insan Sukses Mandiri\',\'12/MB.05/DBB.PE/2023\',\'03-01-2023\',\'03-01-2023\',\'success\',\'Direktur Teknik dan Lingkungan Mineral dan Batubara\',8,\'Segera\',\'SDB\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2178): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\ModelTracking.php(108): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\Tracking.php(307): App\Models\ModelTracking->saveDataTemp([...])
+ 5 APPPATH\Controllers\Tracking.php(264): App\Controllers\Tracking->createToTemp([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-14 03:20:26 --> You must specify a constraint to match on for batch updates.
+in SYSTEMPATH\Database\MySQLi\Builder.php on line 72.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2529): CodeIgniter\Database\MySQLi\Builder->_updateBatch('`tracking_temp`', [...], [])
+ 2 APPPATH\Models\ModelTracking.php(124): CodeIgniter\Database\BaseBuilder->updateBatch()
+ 3 APPPATH\Controllers\Tracking.php(317): App\Models\ModelTracking->updateData()
+ 4 APPPATH\Controllers\Tracking.php(263): App\Controllers\Tracking->createToTemp([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-14 03:21:34 --> mysqli_sql_exception: Duplicate column name 'number' in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `trackin...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `trackin...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `trackin...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2536): CodeIgniter\Database\BaseConnection->query('UPDATE `trackin...', NULL, false)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelTracking.php(124): CodeIgniter\Database\BaseBuilder->updateBatch()
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(317): App\Models\ModelTracking->updateData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(263): App\Controllers\Tracking->createToTemp(Array)
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#12 {main}
+CRITICAL - 2023-02-14 03:21:34 --> Duplicate column name 'number'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2536): CodeIgniter\Database\BaseConnection->query('UPDATE `tracking_temp`
+INNER JOIN (
+SELECT *
+FROM `tracking_temp`
+INNER JOIN `v_tracking_temp_duplicates` ON `v_tracking_temp_duplicates`.`number` = `tracking_temp`.`number`) `_u`
+ON `tracking_temp`.`number` = `_u`.`number`
+SET
+`tracking_temp`.`u` = `_u`.`u`,
+`tracking_temp`.`status` = `_u`.`unknown`', null, false)
+ 2 APPPATH\Models\ModelTracking.php(124): CodeIgniter\Database\BaseBuilder->updateBatch()
+ 3 APPPATH\Controllers\Tracking.php(317): App\Models\ModelTracking->updateData()
+ 4 APPPATH\Controllers\Tracking.php(263): App\Controllers\Tracking->createToTemp([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-14 03:22:02 --> mysqli_sql_exception: Duplicate column name 'number' in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `trackin...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `trackin...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `trackin...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2536): CodeIgniter\Database\BaseConnection->query('UPDATE `trackin...', NULL, false)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelTracking.php(124): CodeIgniter\Database\BaseBuilder->updateBatch()
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(317): App\Models\ModelTracking->updateData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(263): App\Controllers\Tracking->createToTemp(Array)
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#12 {main}
+CRITICAL - 2023-02-14 03:22:02 --> Duplicate column name 'number'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2536): CodeIgniter\Database\BaseConnection->query('UPDATE `tracking_temp`
+INNER JOIN (
+SELECT *
+FROM `tracking_temp`
+INNER JOIN `v_tracking_temp_duplicates` ON `v_tracking_temp_duplicates`.`number` = `tracking_temp`.`number`) `_u`
+ON `tracking_temp`.`trackingid` = `_u`.`trackingid`
+SET
+`tracking_temp`.`u` = `_u`.`u`,
+`tracking_temp`.`status` = `_u`.`unknown`', null, false)
+ 2 APPPATH\Models\ModelTracking.php(124): CodeIgniter\Database\BaseBuilder->updateBatch()
+ 3 APPPATH\Controllers\Tracking.php(317): App\Models\ModelTracking->updateData()
+ 4 APPPATH\Controllers\Tracking.php(263): App\Controllers\Tracking->createToTemp([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-14 03:30:05 --> You must specify a constraint to match on for batch updates.
+in SYSTEMPATH\Database\MySQLi\Builder.php on line 72.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2529): CodeIgniter\Database\MySQLi\Builder->_updateBatch('`tracking_temp`', [...], [])
+ 2 APPPATH\Models\ModelTracking.php(125): CodeIgniter\Database\BaseBuilder->updateBatch()
+ 3 APPPATH\Controllers\Tracking.php(317): App\Models\ModelTracking->updateData()
+ 4 APPPATH\Controllers\Tracking.php(263): App\Controllers\Tracking->createToTemp([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-14 03:30:39 --> mysqli_sql_exception: Unknown column 'tracking_temp.status =' in 'field list' in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `trackin...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `trackin...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `trackin...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2536): CodeIgniter\Database\BaseConnection->query('UPDATE `trackin...', NULL, false)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelTracking.php(125): CodeIgniter\Database\BaseBuilder->updateBatch()
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(317): App\Models\ModelTracking->updateData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(263): App\Controllers\Tracking->createToTemp(Array)
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#12 {main}
+CRITICAL - 2023-02-14 03:30:39 --> Unknown column 'tracking_temp.status =' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2536): CodeIgniter\Database\BaseConnection->query('UPDATE `tracking_temp`
+INNER JOIN (
+SELECT `tracking_temp`.`status =` "unknown"
+FROM `tracking_temp`
+INNER JOIN `v_tracking_temp_duplicates` ON `v_tracking_temp_duplicates`.`number` = `tracking_temp`.`number`) `_u`
+ON `tracking_temp`.`trackingid` = `_u`.`trackingid`
+SET
+`tracking_temp`.`u` = `_u`.`u`', null, false)
+ 2 APPPATH\Models\ModelTracking.php(125): CodeIgniter\Database\BaseBuilder->updateBatch()
+ 3 APPPATH\Controllers\Tracking.php(317): App\Models\ModelTracking->updateData()
+ 4 APPPATH\Controllers\Tracking.php(263): App\Controllers\Tracking->createToTemp([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-14 03:31:13 --> mysqli_sql_exception: Unknown column 'tracking_temp.u' in 'field list' in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `trackin...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `trackin...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `trackin...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2536): CodeIgniter\Database\BaseConnection->query('UPDATE `trackin...', NULL, false)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelTracking.php(125): CodeIgniter\Database\BaseBuilder->updateBatch()
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(317): App\Models\ModelTracking->updateData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(263): App\Controllers\Tracking->createToTemp(Array)
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#12 {main}
+CRITICAL - 2023-02-14 03:31:13 --> Unknown column 'tracking_temp.u' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2536): CodeIgniter\Database\BaseConnection->query('UPDATE `tracking_temp`
+INNER JOIN (
+SELECT `tracking_temp`.`status`
+FROM `tracking_temp`
+INNER JOIN `v_tracking_temp_duplicates` ON `v_tracking_temp_duplicates`.`number` = `tracking_temp`.`number`) `_u`
+ON `tracking_temp`.`trackingid` = `_u`.`trackingid`
+SET
+`tracking_temp`.`u` = `_u`.`u`', null, false)
+ 2 APPPATH\Models\ModelTracking.php(125): CodeIgniter\Database\BaseBuilder->updateBatch()
+ 3 APPPATH\Controllers\Tracking.php(317): App\Models\ModelTracking->updateData()
+ 4 APPPATH\Controllers\Tracking.php(263): App\Controllers\Tracking->createToTemp([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-14 03:32:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`unknown` = `_u`.`status =` `unknown`' at line 8 in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `trackin...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `trackin...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `trackin...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2536): CodeIgniter\Database\BaseConnection->query('UPDATE `trackin...', NULL, false)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelTracking.php(125): CodeIgniter\Database\BaseBuilder->updateBatch()
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(317): App\Models\ModelTracking->updateData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(263): App\Controllers\Tracking->createToTemp(Array)
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#12 {main}
+CRITICAL - 2023-02-14 03:32:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`unknown` = `_u`.`status =` `unknown`' at line 8
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2536): CodeIgniter\Database\BaseConnection->query('UPDATE `tracking_temp`
+INNER JOIN (
+SELECT `tracking_temp`.`status`
+FROM `tracking_temp`
+INNER JOIN `v_tracking_temp_duplicates` ON `v_tracking_temp_duplicates`.`number` = `tracking_temp`.`number`) `_u`
+ON `tracking_temp`.`trackingid` = `_u`.`trackingid`
+SET
+`tracking_temp`.`status =` `unknown` = `_u`.`status =` `unknown`', null, false)
+ 2 APPPATH\Models\ModelTracking.php(125): CodeIgniter\Database\BaseBuilder->updateBatch()
+ 3 APPPATH\Controllers\Tracking.php(317): App\Models\ModelTracking->updateData()
+ 4 APPPATH\Controllers\Tracking.php(263): App\Controllers\Tracking->createToTemp([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-14 03:32:46 --> mysqli_sql_exception: Unknown column 'tracking_temp.u' in 'field list' in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `trackin...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `trackin...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `trackin...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2536): CodeIgniter\Database\BaseConnection->query('UPDATE `trackin...', NULL, false)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelTracking.php(125): CodeIgniter\Database\BaseBuilder->updateBatch()
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(317): App\Models\ModelTracking->updateData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(263): App\Controllers\Tracking->createToTemp(Array)
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#12 {main}
+CRITICAL - 2023-02-14 03:32:46 --> Unknown column 'tracking_temp.u' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2536): CodeIgniter\Database\BaseConnection->query('UPDATE `tracking_temp`
+INNER JOIN (
+SELECT `tracking_temp`.`status`
+FROM `tracking_temp`
+INNER JOIN `v_tracking_temp_duplicates` ON `v_tracking_temp_duplicates`.`number` = `tracking_temp`.`number`) `_u`
+ON `tracking_temp`.`trackingid` = `_u`.`trackingid`
+SET
+`tracking_temp`.`u` = `_u`.`u`,
+`tracking_temp`.`status` = `_u`.`unknown`', null, false)
+ 2 APPPATH\Models\ModelTracking.php(125): CodeIgniter\Database\BaseBuilder->updateBatch()
+ 3 APPPATH\Controllers\Tracking.php(317): App\Models\ModelTracking->updateData()
+ 4 APPPATH\Controllers\Tracking.php(263): App\Controllers\Tracking->createToTemp([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-14 03:33:37 --> mysqli_sql_exception: Unknown column '_u.trackingid' in 'on clause' in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `trackin...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `trackin...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `trackin...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2536): CodeIgniter\Database\BaseConnection->query('UPDATE `trackin...', NULL, false)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelTracking.php(125): CodeIgniter\Database\BaseBuilder->updateBatch()
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(317): App\Models\ModelTracking->updateData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(263): App\Controllers\Tracking->createToTemp(Array)
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#12 {main}
+CRITICAL - 2023-02-14 03:33:37 --> Unknown column '_u.trackingid' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2536): CodeIgniter\Database\BaseConnection->query('UPDATE `tracking_temp`
+INNER JOIN (
+SELECT `tracking_temp`.`status`
+FROM `tracking_temp`
+INNER JOIN `v_tracking_temp_duplicates` ON `v_tracking_temp_duplicates`.`number` = `tracking_temp`.`number`) `_u`
+ON `tracking_temp`.`trackingid` = `_u`.`trackingid`
+SET
+`tracking_temp`.`status` = `_u`.`unknown`', null, false)
+ 2 APPPATH\Models\ModelTracking.php(125): CodeIgniter\Database\BaseBuilder->updateBatch()
+ 3 APPPATH\Controllers\Tracking.php(317): App\Models\ModelTracking->updateData()
+ 4 APPPATH\Controllers\Tracking.php(263): App\Controllers\Tracking->createToTemp([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-14 03:34:14 --> mysqli_sql_exception: Unknown column 'tracking_temp.tracking_temp.trackingid' in 'on clause' in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `trackin...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `trackin...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `trackin...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2536): CodeIgniter\Database\BaseConnection->query('UPDATE `trackin...', NULL, false)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelTracking.php(125): CodeIgniter\Database\BaseBuilder->updateBatch()
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(317): App\Models\ModelTracking->updateData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(263): App\Controllers\Tracking->createToTemp(Array)
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#12 {main}
+CRITICAL - 2023-02-14 03:34:14 --> Unknown column 'tracking_temp.tracking_temp.trackingid' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2536): CodeIgniter\Database\BaseConnection->query('UPDATE `tracking_temp`
+INNER JOIN (
+SELECT `tracking_temp`.`status`
+FROM `tracking_temp`
+INNER JOIN `v_tracking_temp_duplicates` ON `v_tracking_temp_duplicates`.`number` = `tracking_temp`.`number`) `_u`
+ON `tracking_temp`.`tracking_temp`.`trackingid` = `_u`.`tracking_temp`.`trackingid`
+SET
+`tracking_temp`.`status` = `_u`.`unknown`', null, false)
+ 2 APPPATH\Models\ModelTracking.php(125): CodeIgniter\Database\BaseBuilder->updateBatch()
+ 3 APPPATH\Controllers\Tracking.php(317): App\Models\ModelTracking->updateData()
+ 4 APPPATH\Controllers\Tracking.php(263): App\Controllers\Tracking->createToTemp([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-14 03:41:18 --> mysqli_sql_exception: Unknown column 'tracking_temp.u' in 'field list' in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `trackin...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `trackin...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `trackin...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2536): CodeIgniter\Database\BaseConnection->query('UPDATE `trackin...', NULL, false)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelTracking.php(125): CodeIgniter\Database\BaseBuilder->updateBatch()
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(317): App\Models\ModelTracking->updateData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(263): App\Controllers\Tracking->createToTemp(Array)
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#12 {main}
+CRITICAL - 2023-02-14 03:41:18 --> Unknown column 'tracking_temp.u' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2536): CodeIgniter\Database\BaseConnection->query('UPDATE `tracking_temp`
+INNER JOIN (
+SELECT `tracking_temp`.`status`
+FROM `v_tracking_temp_duplicates`
+INNER JOIN `tracking_temp` ON `tracking_temp`.`number` = `v_tracking_temp_duplicates`.`number`) `_u`
+ON `tracking_temp`.`number` = `_u`.`number`
+SET
+`tracking_temp`.`u` = `_u`.`u`,
+`tracking_temp`.`status` = `_u`.`unknown`', null, false)
+ 2 APPPATH\Models\ModelTracking.php(125): CodeIgniter\Database\BaseBuilder->updateBatch()
+ 3 APPPATH\Controllers\Tracking.php(317): App\Models\ModelTracking->updateData()
+ 4 APPPATH\Controllers\Tracking.php(263): App\Controllers\Tracking->createToTemp([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-14 03:42:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 7 in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `trackin...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `trackin...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `trackin...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2536): CodeIgniter\Database\BaseConnection->query('UPDATE `trackin...', NULL, false)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelTracking.php(125): CodeIgniter\Database\BaseBuilder->updateBatch()
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(317): App\Models\ModelTracking->updateData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(263): App\Controllers\Tracking->createToTemp(Array)
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#12 {main}
+CRITICAL - 2023-02-14 03:42:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 7
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2536): CodeIgniter\Database\BaseConnection->query('UPDATE `tracking_temp`
+INNER JOIN (
+SELECT `tracking_temp`.`status`
+FROM `v_tracking_temp_duplicates`
+INNER JOIN `tracking_temp` ON `tracking_temp`.`number` = `v_tracking_temp_duplicates`.`number`) `_u`
+ON `tracking_temp`.`number` = `_u`.`number`
+SET
+', null, false)
+ 2 APPPATH\Models\ModelTracking.php(125): CodeIgniter\Database\BaseBuilder->updateBatch()
+ 3 APPPATH\Controllers\Tracking.php(317): App\Models\ModelTracking->updateData()
+ 4 APPPATH\Controllers\Tracking.php(263): App\Controllers\Tracking->createToTemp([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-14 03:43:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 7 in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `trackin...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `trackin...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `trackin...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2536): CodeIgniter\Database\BaseConnection->query('UPDATE `trackin...', NULL, false)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelTracking.php(125): CodeIgniter\Database\BaseBuilder->updateBatch()
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(317): App\Models\ModelTracking->updateData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(263): App\Controllers\Tracking->createToTemp(Array)
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#12 {main}
+CRITICAL - 2023-02-14 03:43:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 7
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2536): CodeIgniter\Database\BaseConnection->query('UPDATE `tracking_temp`
+INNER JOIN (
+SELECT `tracking_temp`.`status`
+FROM `v_tracking_temp_duplicates`
+INNER JOIN `tracking_temp` ON `tracking_temp`.`number` = `v_tracking_temp_duplicates`.`number`) `_u`
+ON `tracking_temp`.`number` = `_u`.`number`
+SET
+', null, false)
+ 2 APPPATH\Models\ModelTracking.php(125): CodeIgniter\Database\BaseBuilder->updateBatch()
+ 3 APPPATH\Controllers\Tracking.php(317): App\Models\ModelTracking->updateData()
+ 4 APPPATH\Controllers\Tracking.php(263): App\Controllers\Tracking->createToTemp([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-14 03:44:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 7 in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `trackin...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `trackin...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `trackin...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2536): CodeIgniter\Database\BaseConnection->query('UPDATE `trackin...', NULL, false)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelTracking.php(125): CodeIgniter\Database\BaseBuilder->updateBatch()
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(317): App\Models\ModelTracking->updateData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(263): App\Controllers\Tracking->createToTemp(Array)
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#12 {main}
+CRITICAL - 2023-02-14 03:44:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 7
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2536): CodeIgniter\Database\BaseConnection->query('UPDATE `tracking_temp`
+INNER JOIN (
+SELECT `tracking_temp`.`status`
+FROM `v_tracking_temp_duplicates`
+INNER JOIN `tracking_temp` ON `tracking_temp`.`number` = `v_tracking_temp_duplicates`.`number`) `_u`
+ON `tracking_temp`.`trackingid` = `_u`.`trackingid`
+SET
+', null, false)
+ 2 APPPATH\Models\ModelTracking.php(125): CodeIgniter\Database\BaseBuilder->updateBatch()
+ 3 APPPATH\Controllers\Tracking.php(317): App\Models\ModelTracking->updateData()
+ 4 APPPATH\Controllers\Tracking.php(263): App\Controllers\Tracking->createToTemp([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-14 03:44:21 --> mysqli_sql_exception: Unknown column '_u.trackingid' in 'on clause' in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `trackin...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `trackin...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `trackin...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2536): CodeIgniter\Database\BaseConnection->query('UPDATE `trackin...', NULL, false)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelTracking.php(125): CodeIgniter\Database\BaseBuilder->updateBatch()
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(317): App\Models\ModelTracking->updateData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(263): App\Controllers\Tracking->createToTemp(Array)
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#12 {main}
+CRITICAL - 2023-02-14 03:44:21 --> Unknown column '_u.trackingid' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2536): CodeIgniter\Database\BaseConnection->query('UPDATE `tracking_temp`
+INNER JOIN (
+SELECT `tracking_temp`.`status`
+FROM `v_tracking_temp_duplicates`
+INNER JOIN `tracking_temp` ON `tracking_temp`.`number` = `v_tracking_temp_duplicates`.`number`) `_u`
+ON `tracking_temp`.`trackingid` = `_u`.`trackingid`
+SET
+`tracking_temp`.`number` = `_u`.`number`,
+`tracking_temp`.`status` = `_u`.`unknown`', null, false)
+ 2 APPPATH\Models\ModelTracking.php(125): CodeIgniter\Database\BaseBuilder->updateBatch()
+ 3 APPPATH\Controllers\Tracking.php(317): App\Models\ModelTracking->updateData()
+ 4 APPPATH\Controllers\Tracking.php(263): App\Controllers\Tracking->createToTemp([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-14 04:28:55 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2753.
+ 1 APPPATH\Models\ModelTracking.php(104): CodeIgniter\Database\BaseBuilder->delete()
+ 2 APPPATH\Controllers\Tracking.php(272): App\Models\ModelTracking->deleteData()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-14 04:34:14 --> Too few arguments to function App\Models\ModelUnknown::getUnknown(), 0 passed in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Unknown.php on line 19 and exactly 1 expected
+in APPPATH\Models\ModelUnknown.php on line 22.
+ 1 APPPATH\Controllers\Unknown.php(19): App\Models\ModelUnknown->getUnknown()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Unknown->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unknown))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-14 13:43:23 --> Undefined array key "isUnknown"
+in APPPATH\Models\ModelTracking.php on line 26.
+ 1 APPPATH\Models\ModelTracking.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "isUnknown"', 'APPPATH\\Models\\ModelTracking.php', 26)
+ 2 APPPATH\Controllers\Tracking.php(19): App\Models\ModelTracking->getTracking([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-14 13:43:38 --> Undefined array key "isUnknown"
+in APPPATH\Models\ModelTracking.php on line 26.
+ 1 APPPATH\Models\ModelTracking.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "isUnknown"', 'APPPATH\\Models\\ModelTracking.php', 26)
+ 2 APPPATH\Controllers\Tracking.php(19): App\Models\ModelTracking->getTracking([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

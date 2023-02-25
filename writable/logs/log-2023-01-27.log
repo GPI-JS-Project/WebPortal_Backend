@@ -1,0 +1,799 @@
+CRITICAL - 2023-01-27 00:00:22 --> Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 SYSTEMPATH\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8 characters, possibly incorrectly encoded')
+ 2 SYSTEMPATH\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format([...])
+ 3 SYSTEMPATH\API\ResponseTrait.php(99): App\Controllers\Tracking->format([...])
+ 4 APPPATH\Controllers\Tracking.php(67): App\Controllers\Tracking->respond([...], 200)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 00:00:22 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Format\Exceptions\FormatException))
+#5 {main}
+  thrown
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-27 00:26:20 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('SDB.UP.3.1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('SDB.UP.3.1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 05:42:15 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('SDB.UP.3.1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('SDB.UP.3.1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 05:42:18 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('SDB.UP.3.1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('SDB.UP.3.1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 07:46:19 --> Undefined variable $i
+in APPPATH\Controllers\Tracking.php on line 101.
+ 1 APPPATH\Controllers\Tracking.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'APPPATH\\Controllers\\Tracking.php', 101)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 16:04:30 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('SDB.UP.3.1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('SDB.UP.3.1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 16:04:33 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('SDB.UP.3.1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('SDB.UP.3.1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 16:04:54 --> Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 SYSTEMPATH\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8 characters, possibly incorrectly encoded')
+ 2 SYSTEMPATH\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format([...])
+ 3 SYSTEMPATH\API\ResponseTrait.php(99): App\Controllers\Tracking->format([...])
+ 4 APPPATH\Controllers\Tracking.php(66): App\Controllers\Tracking->respond([...], 200)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 16:04:59 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 251662336 bytes)
+in SYSTEMPATH\Format\JSONFormatter.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-27 16:11:23 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 257953792 bytes)
+in SYSTEMPATH\Format\JSONFormatter.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-27 16:11:29 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 260050944 bytes)
+in SYSTEMPATH\Format\JSONFormatter.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-27 16:13:03 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 260050944 bytes)
+in SYSTEMPATH\Format\JSONFormatter.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-27 16:13:56 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 260050944 bytes)
+in SYSTEMPATH\Format\JSONFormatter.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-27 16:19:29 --> Allowed memory size of 1061158912 bytes exhausted (tried to allocate 524292096 bytes)
+in SYSTEMPATH\Format\JSONFormatter.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-27 16:44:00 --> Call to undefined function App\Controllers\fget()
+in APPPATH\Controllers\Tracking.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 16:57:55 --> Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 SYSTEMPATH\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8 characters, possibly incorrectly encoded')
+ 2 SYSTEMPATH\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format([...])
+ 3 SYSTEMPATH\API\ResponseTrait.php(99): App\Controllers\Tracking->format([...])
+ 4 APPPATH\Controllers\Tracking.php(65): App\Controllers\Tracking->respond([...], 200)
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 16:57:56 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Malformed UTF-8 characters, possibly incorrectly encoded in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Format\Exceptions\FormatException))
+#5 {main}
+  thrown
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-27 17:26:29 --> Call to a member function getClientExtension() on null
+in APPPATH\Controllers\Tracking.php on line 83.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 17:36:08 --> Could not find zip member zip://C:\Server\tmp\phpA54B.tmp#_rels/.rels
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 159.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(412): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('C:\\Server\\tmp\\phpA54B.tmp', '_rels/.rels')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\BaseReader.php(172): PhpOffice\PhpSpreadsheet\Reader\Xlsx->loadSpreadsheetFromFile('C:\\Server\\tmp\\phpA54B.tmp')
+ 3 APPPATH\Controllers\Tracking.php(89): PhpOffice\PhpSpreadsheet\Reader\BaseReader->load('C:\\Server\\tmp\\phpA54B.tmp')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 17:36:48 --> Could not find zip member zip://C:\Server\tmp\php4267.tmp#_rels/.rels
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 159.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(412): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('C:\\Server\\tmp\\php4267.tmp', '_rels/.rels')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\BaseReader.php(172): PhpOffice\PhpSpreadsheet\Reader\Xlsx->loadSpreadsheetFromFile('C:\\Server\\tmp\\php4267.tmp')
+ 3 APPPATH\Controllers\Tracking.php(89): PhpOffice\PhpSpreadsheet\Reader\BaseReader->load('C:\\Server\\tmp\\php4267.tmp')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 17:37:04 --> Could not find zip member zip://C:\Server\tmp\php81D2.tmp#_rels/.rels
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 159.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(412): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('C:\\Server\\tmp\\php81D2.tmp', '_rels/.rels')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\BaseReader.php(172): PhpOffice\PhpSpreadsheet\Reader\Xlsx->loadSpreadsheetFromFile('C:\\Server\\tmp\\php81D2.tmp')
+ 3 APPPATH\Controllers\Tracking.php(89): PhpOffice\PhpSpreadsheet\Reader\BaseReader->load('C:\\Server\\tmp\\php81D2.tmp')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 17:37:41 --> Could not find zip member zip://C:\Server\tmp\php1152.tmp#_rels/.rels
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 159.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(412): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('C:\\Server\\tmp\\php1152.tmp', '_rels/.rels')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\BaseReader.php(172): PhpOffice\PhpSpreadsheet\Reader\Xlsx->loadSpreadsheetFromFile('C:\\Server\\tmp\\php1152.tmp')
+ 3 APPPATH\Controllers\Tracking.php(89): PhpOffice\PhpSpreadsheet\Reader\BaseReader->load('C:\\Server\\tmp\\php1152.tmp')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 17:38:54 --> Could not find zip member zip://C:\Server\tmp\php2DBF.tmp#_rels/.rels
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 159.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(412): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('C:\\Server\\tmp\\php2DBF.tmp', '_rels/.rels')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\BaseReader.php(172): PhpOffice\PhpSpreadsheet\Reader\Xlsx->loadSpreadsheetFromFile('C:\\Server\\tmp\\php2DBF.tmp')
+ 3 APPPATH\Controllers\Tracking.php(89): PhpOffice\PhpSpreadsheet\Reader\BaseReader->load('C:\\Server\\tmp\\php2DBF.tmp')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 17:41:16 --> Could not find zip member zip://C:\Server\tmp\php57D4.tmp#_rels/.rels
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 159.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(412): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('C:\\Server\\tmp\\php57D4.tmp', '_rels/.rels')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\BaseReader.php(172): PhpOffice\PhpSpreadsheet\Reader\Xlsx->loadSpreadsheetFromFile('C:\\Server\\tmp\\php57D4.tmp')
+ 3 APPPATH\Controllers\Tracking.php(89): PhpOffice\PhpSpreadsheet\Reader\BaseReader->load('C:\\Server\\tmp\\php57D4.tmp')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-27 17:41:34 --> Error connecting to the database: mysqli_sql_exception: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('mailtrackminerb...', 'n1571149_mailtr...', 'mailtracking202...', 'n1571149_testma...', 3306, '', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelOtentikasi.php(17): CodeIgniter\BaseModel->first()
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Helpers\jwt_helper.php(22): App\Models\ModelOtentikasi->getEmployee('198412192009021...', '198412192009021...')
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Filters\FilterJwt.php(22): validateJWT('eyJ0eXAiOiJKV1Q...')
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('tracking', 'before')
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelOtentikasi.php(17): CodeIgniter\BaseModel->first()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Helpers\jwt_helper.php(22): App\Models\ModelOtentikasi->getEmployee('198412192009021...', '198412192009021...')
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Filters\FilterJwt.php(22): validateJWT('eyJ0eXAiOiJKV1Q...')
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('tracking', 'before')
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#13 {main}
+CRITICAL - 2023-01-27 17:41:34 --> Unable to connect to the database.
+Main connection [MySQLi]: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `v_access`
+WHERE `employeeId` = :employeeId:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\ModelOtentikasi.php(17): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Helpers\jwt_helper.php(22): App\Models\ModelOtentikasi->getEmployee('198412192009021001', '198412192009021001')
+ 7 APPPATH\Filters\FilterJwt.php(22): validateJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuaXAiOiIxOTg0MTIxOTIwMDkwMjEwMDEiLCJwYXNzd29yZCI6IjE5ODQxMjE5MjAwOTAyMTAwMSIsImlhdCI6MTY3NDg2MTk3MywiZXhwIjoxNjc0ODY1NTczfQ.7qrXOmBj_xfakTp_LSixdI1GtkQ8aqkHsFJsQWq-UUU')
+ 8 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 9 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('tracking', 'before')
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 17:41:34 --> Could not find zip member zip://C:\Server\tmp\php9FEA.tmp#_rels/.rels
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 159.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(412): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('C:\\Server\\tmp\\php9FEA.tmp', '_rels/.rels')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\BaseReader.php(172): PhpOffice\PhpSpreadsheet\Reader\Xlsx->loadSpreadsheetFromFile('C:\\Server\\tmp\\php9FEA.tmp')
+ 3 APPPATH\Controllers\Tracking.php(89): PhpOffice\PhpSpreadsheet\Reader\BaseReader->load('C:\\Server\\tmp\\php9FEA.tmp')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 17:42:48 --> Could not find zip member zip://C:\Server\tmp\phpC0FB.tmp#_rels/.rels
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 159.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(412): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('C:\\Server\\tmp\\phpC0FB.tmp', '_rels/.rels')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\BaseReader.php(172): PhpOffice\PhpSpreadsheet\Reader\Xlsx->loadSpreadsheetFromFile('C:\\Server\\tmp\\phpC0FB.tmp')
+ 3 APPPATH\Controllers\Tracking.php(89): PhpOffice\PhpSpreadsheet\Reader\BaseReader->load('C:\\Server\\tmp\\phpC0FB.tmp')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 17:44:44 --> Undefined variable $render
+in APPPATH\Controllers\Tracking.php on line 95.
+ 1 APPPATH\Controllers\Tracking.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $render', 'APPPATH\\Controllers\\Tracking.php', 95)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 17:45:33 --> auto_detect_line_endings is deprecated
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php on line 317.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'auto_detect_line_endings is deprecated', 'VENDORPATH\\phpoffice\\phpspreadsheet\\src\\PhpSpreadsheet\\Reader\\Csv.php', 317)
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(317): ini_set('auto_detect_line_endings', '1')
+ 3 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(363): PhpOffice\PhpSpreadsheet\Reader\Csv->setAutoDetect('1')
+ 4 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(354): PhpOffice\PhpSpreadsheet\Reader\Csv->loadStringOrFile('C:\\Server\\tmp\\php4297.tmp', Object(PhpOffice\PhpSpreadsheet\Spreadsheet), false)
+ 5 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(268): PhpOffice\PhpSpreadsheet\Reader\Csv->loadIntoExisting('C:\\Server\\tmp\\php4297.tmp', Object(PhpOffice\PhpSpreadsheet\Spreadsheet))
+ 6 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\BaseReader.php(172): PhpOffice\PhpSpreadsheet\Reader\Csv->loadSpreadsheetFromFile('C:\\Server\\tmp\\php4297.tmp')
+ 7 APPPATH\Controllers\Tracking.php(95): PhpOffice\PhpSpreadsheet\Reader\BaseReader->load('C:\\Server\\tmp\\php4297.tmp')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 17:45:33 --> Uncaught PhpOffice\PhpSpreadsheet\Exception: Spreadsheet objects cannot be json encoded in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Spreadsheet.php:1655
+Stack trace:
+#0 [internal function]: PhpOffice\PhpSpreadsheet\Spreadsheet->jsonSerialize()
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(38): json_encode(Array, 960, 512)
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#6 {main}
+  thrown
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Spreadsheet.php on line 1655.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-27 17:58:35 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 67112960 bytes)
+in SYSTEMPATH\Format\JSONFormatter.php on line 38.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-27 18:00:39 --> Undefined array key 9
+in APPPATH\Controllers\Tracking.php on line 105.
+ 1 APPPATH\Controllers\Tracking.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 9', 'APPPATH\\Controllers\\Tracking.php', 105)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 18:02:52 --> Undefined array key 9
+in APPPATH\Controllers\Tracking.php on line 105.
+ 1 APPPATH\Controllers\Tracking.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 9', 'APPPATH\\Controllers\\Tracking.php', 105)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 18:25:22 --> Class "App\Controllers\IOFactory" not found
+in APPPATH\Controllers\Tracking.php on line 100.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 18:26:46 --> Class "App\Controllers\Chunk" not found
+in APPPATH\Controllers\Tracking.php on line 103.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 18:28:54 --> Class "App\Controllers\ChunkReadFilter" not found
+in APPPATH\Controllers\Tracking.php on line 103.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 19:32:13 --> Undefined variable $spreadsheet
+in APPPATH\Controllers\Tracking.php on line 91.
+ 1 APPPATH\Controllers\Tracking.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $spreadsheet', 'APPPATH\\Controllers\\Tracking.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 19:33:02 --> No reader found for type xlsx
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php on line 76.
+ 1 APPPATH\Controllers\Tracking.php(100): PhpOffice\PhpSpreadsheet\IOFactory::createReader('xlsx')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 19:33:20 --> Could not find zip member zip://C:\Server\tmp\phpF157.tmp#_rels/.rels
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Shared\File.php on line 159.
+ 1 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Xlsx.php(412): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('C:\\Server\\tmp\\phpF157.tmp', '_rels/.rels')
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\BaseReader.php(172): PhpOffice\PhpSpreadsheet\Reader\Xlsx->loadSpreadsheetFromFile('C:\\Server\\tmp\\phpF157.tmp')
+ 3 APPPATH\Controllers\Tracking.php(89): PhpOffice\PhpSpreadsheet\Reader\BaseReader->load('C:\\Server\\tmp\\phpF157.tmp')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 19:34:36 --> No reader found for type xlsx
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php on line 76.
+ 1 APPPATH\Controllers\Tracking.php(100): PhpOffice\PhpSpreadsheet\IOFactory::createReader('xlsx')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 19:39:25 --> Undefined variable $file
+in APPPATH\Controllers\Tracking.php on line 84.
+ 1 APPPATH\Controllers\Tracking.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH\\Controllers\\Tracking.php', 84)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 19:39:33 --> Undefined variable $file
+in APPPATH\Controllers\Tracking.php on line 84.
+ 1 APPPATH\Controllers\Tracking.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH\\Controllers\\Tracking.php', 84)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 19:40:15 --> Undefined variable $file
+in APPPATH\Controllers\Tracking.php on line 85.
+ 1 APPPATH\Controllers\Tracking.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'APPPATH\\Controllers\\Tracking.php', 85)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 19:40:35 --> PhpOffice\PhpSpreadsheet\Reader\BaseReader::load(): Argument #1 ($filename) must be of type string, resource given, called in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php on line 93
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\BaseReader.php on line 167.
+ 1 APPPATH\Controllers\Tracking.php(93): PhpOffice\PhpSpreadsheet\Reader\BaseReader->load(resource (stream))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 19:40:35 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(TypeError))
+#5 {main}
+  thrown
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-27 19:41:04 --> PhpOffice\PhpSpreadsheet\Reader\BaseReader::load(): Argument #1 ($filename) must be of type string, resource given, called in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php on line 93
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\BaseReader.php on line 167.
+ 1 APPPATH\Controllers\Tracking.php(93): PhpOffice\PhpSpreadsheet\Reader\BaseReader->load(resource (stream))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 19:41:04 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(TypeError))
+#5 {main}
+  thrown
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-27 19:47:32 --> No reader found for type 1674870452_067a980e3b9c993c7d46.xlsx
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php on line 76.
+ 1 APPPATH\Controllers\Tracking.php(104): PhpOffice\PhpSpreadsheet\IOFactory::createReader('1674870452_067a980e3b9c993c7d46.xlsx')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 19:49:28 --> No reader found for type 1674870568_73595f6e878a187153a7.csv
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php on line 76.
+ 1 APPPATH\Controllers\Tracking.php(104): PhpOffice\PhpSpreadsheet\IOFactory::createReader('1674870568_73595f6e878a187153a7.csv')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 19:49:36 --> No reader found for type 1674870576_ca8e09fb7908b75e8e16.xlsx
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php on line 76.
+ 1 APPPATH\Controllers\Tracking.php(104): PhpOffice\PhpSpreadsheet\IOFactory::createReader('1674870576_ca8e09fb7908b75e8e16.xlsx')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 19:50:35 --> No reader found for type 1674870635_04c7eb10d5944503a031.xlsx
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\IOFactory.php on line 76.
+ 1 APPPATH\Controllers\Tracking.php(104): PhpOffice\PhpSpreadsheet\IOFactory::createReader('1674870635_04c7eb10d5944503a031.xlsx')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 19:51:34 --> Undefined variable $reader
+in APPPATH\Controllers\Tracking.php on line 112.
+ 1 APPPATH\Controllers\Tracking.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $reader', 'APPPATH\\Controllers\\Tracking.php', 112)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 19:52:12 --> PhpOffice\PhpSpreadsheet\Reader\BaseReader::load(): Argument #1 ($filename) must be of type string, resource given, called in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php on line 113
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\BaseReader.php on line 167.
+ 1 APPPATH\Controllers\Tracking.php(113): PhpOffice\PhpSpreadsheet\Reader\BaseReader->load(resource (stream))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 19:52:12 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(TypeError))
+#5 {main}
+  thrown
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-27 19:52:39 --> PhpOffice\PhpSpreadsheet\Reader\BaseReader::load(): Argument #1 ($filename) must be of type string, resource given, called in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php on line 113
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\BaseReader.php on line 167.
+ 1 APPPATH\Controllers\Tracking.php(113): PhpOffice\PhpSpreadsheet\Reader\BaseReader->load(resource (stream))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 19:52:39 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(TypeError))
+#5 {main}
+  thrown
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-27 19:53:10 --> PhpOffice\PhpSpreadsheet\Reader\BaseReader::load(): Argument #1 ($filename) must be of type string, resource given, called in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php on line 113
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\BaseReader.php on line 167.
+ 1 APPPATH\Controllers\Tracking.php(113): PhpOffice\PhpSpreadsheet\Reader\BaseReader->load(resource (stream))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 19:53:10 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(TypeError))
+#5 {main}
+  thrown
+in SYSTEMPATH\Format\JSONFormatter.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-27 19:55:37 --> Call to a member function getClientExtension() on null
+in APPPATH\Controllers\Tracking.php on line 83.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 19:56:05 --> auto_detect_line_endings is deprecated
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php on line 317.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'auto_detect_line_endings is deprecated', 'VENDORPATH\\phpoffice\\phpspreadsheet\\src\\PhpSpreadsheet\\Reader\\Csv.php', 317)
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(317): ini_set('auto_detect_line_endings', '1')
+ 3 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(363): PhpOffice\PhpSpreadsheet\Reader\Csv->setAutoDetect('1')
+ 4 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(354): PhpOffice\PhpSpreadsheet\Reader\Csv->loadStringOrFile('C:\\Server\\tmp\\phpC560.tmp', Object(PhpOffice\PhpSpreadsheet\Spreadsheet), false)
+ 5 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(268): PhpOffice\PhpSpreadsheet\Reader\Csv->loadIntoExisting('C:\\Server\\tmp\\phpC560.tmp', Object(PhpOffice\PhpSpreadsheet\Spreadsheet))
+ 6 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\BaseReader.php(172): PhpOffice\PhpSpreadsheet\Reader\Csv->loadSpreadsheetFromFile('C:\\Server\\tmp\\phpC560.tmp')
+ 7 APPPATH\Controllers\Tracking.php(91): PhpOffice\PhpSpreadsheet\Reader\BaseReader->load('C:\\Server\\tmp\\phpC560.tmp')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 19:56:05 --> Uncaught PhpOffice\PhpSpreadsheet\Exception: Spreadsheet objects cannot be json encoded in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Spreadsheet.php:1655
+Stack trace:
+#0 [internal function]: PhpOffice\PhpSpreadsheet\Spreadsheet->jsonSerialize()
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(38): json_encode(Array, 960, 512)
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#6 {main}
+  thrown
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Spreadsheet.php on line 1655.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-27 19:57:58 --> auto_detect_line_endings is deprecated
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php on line 317.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'auto_detect_line_endings is deprecated', 'VENDORPATH\\phpoffice\\phpspreadsheet\\src\\PhpSpreadsheet\\Reader\\Csv.php', 317)
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(317): ini_set('auto_detect_line_endings', '1')
+ 3 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(363): PhpOffice\PhpSpreadsheet\Reader\Csv->setAutoDetect('1')
+ 4 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(354): PhpOffice\PhpSpreadsheet\Reader\Csv->loadStringOrFile('C:\\Server\\tmp\\php7F76.tmp', Object(PhpOffice\PhpSpreadsheet\Spreadsheet), false)
+ 5 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(268): PhpOffice\PhpSpreadsheet\Reader\Csv->loadIntoExisting('C:\\Server\\tmp\\php7F76.tmp', Object(PhpOffice\PhpSpreadsheet\Spreadsheet))
+ 6 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\BaseReader.php(172): PhpOffice\PhpSpreadsheet\Reader\Csv->loadSpreadsheetFromFile('C:\\Server\\tmp\\php7F76.tmp')
+ 7 APPPATH\Controllers\Tracking.php(91): PhpOffice\PhpSpreadsheet\Reader\BaseReader->load('C:\\Server\\tmp\\php7F76.tmp')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 19:57:58 --> Uncaught PhpOffice\PhpSpreadsheet\Exception: Spreadsheet objects cannot be json encoded in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Spreadsheet.php:1655
+Stack trace:
+#0 [internal function]: PhpOffice\PhpSpreadsheet\Spreadsheet->jsonSerialize()
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(38): json_encode(Array, 960, 512)
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#6 {main}
+  thrown
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Spreadsheet.php on line 1655.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-27 20:18:08 --> auto_detect_line_endings is deprecated
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php on line 317.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'auto_detect_line_endings is deprecated', 'VENDORPATH\\phpoffice\\phpspreadsheet\\src\\PhpSpreadsheet\\Reader\\Csv.php', 317)
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(317): ini_set('auto_detect_line_endings', '1')
+ 3 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(363): PhpOffice\PhpSpreadsheet\Reader\Csv->setAutoDetect('1')
+ 4 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(354): PhpOffice\PhpSpreadsheet\Reader\Csv->loadStringOrFile('C:\\Server\\tmp\\phpF5AB.tmp', Object(PhpOffice\PhpSpreadsheet\Spreadsheet), false)
+ 5 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(268): PhpOffice\PhpSpreadsheet\Reader\Csv->loadIntoExisting('C:\\Server\\tmp\\phpF5AB.tmp', Object(PhpOffice\PhpSpreadsheet\Spreadsheet))
+ 6 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\BaseReader.php(172): PhpOffice\PhpSpreadsheet\Reader\Csv->loadSpreadsheetFromFile('C:\\Server\\tmp\\phpF5AB.tmp')
+ 7 APPPATH\Controllers\Tracking.php(91): PhpOffice\PhpSpreadsheet\Reader\BaseReader->load('C:\\Server\\tmp\\phpF5AB.tmp')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 20:18:08 --> Uncaught PhpOffice\PhpSpreadsheet\Exception: Spreadsheet objects cannot be json encoded in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Spreadsheet.php:1655
+Stack trace:
+#0 [internal function]: PhpOffice\PhpSpreadsheet\Spreadsheet->jsonSerialize()
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(38): json_encode(Array, 960, 512)
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#6 {main}
+  thrown
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Spreadsheet.php on line 1655.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2023-01-27 22:08:54 --> Error connecting to the database: mysqli_sql_exception: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('mailtrackminerb...', 'n1571149_mailtr...', 'mailtracking202...', 'n1571149_testma...', 3306, '', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelOtentikasi.php(17): CodeIgniter\BaseModel->first()
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Helpers\jwt_helper.php(22): App\Models\ModelOtentikasi->getEmployee('198412192009021...', '198412192009021...')
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Filters\FilterJwt.php(22): validateJWT('eyJ0eXAiOiJKV1Q...')
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('tracking', 'before')
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelOtentikasi.php(17): CodeIgniter\BaseModel->first()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Helpers\jwt_helper.php(22): App\Models\ModelOtentikasi->getEmployee('198412192009021...', '198412192009021...')
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Filters\FilterJwt.php(22): validateJWT('eyJ0eXAiOiJKV1Q...')
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('tracking', 'before')
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#13 {main}
+CRITICAL - 2023-01-27 22:08:54 --> Unable to connect to the database.
+Main connection [MySQLi]: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `v_access`
+WHERE `employeeId` = :employeeId:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\ModelOtentikasi.php(17): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Helpers\jwt_helper.php(22): App\Models\ModelOtentikasi->getEmployee('198412192009021001', '198412192009021001')
+ 7 APPPATH\Filters\FilterJwt.php(22): validateJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuaXAiOiIxOTg0MTIxOTIwMDkwMjEwMDEiLCJwYXNzd29yZCI6IjE5ODQxMjE5MjAwOTAyMTAwMSIsImlhdCI6MTY3NDg3NjQ0MywiZXhwIjoxNjc0ODgwMDQzfQ.bndMxj2N5hJUnyHHxejVIWFG2lCo06r-f1zObnCitk4')
+ 8 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 9 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('tracking', 'before')
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 22:51:28 --> auto_detect_line_endings is deprecated
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php on line 317.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'auto_detect_line_endings is deprecated', 'VENDORPATH\\phpoffice\\phpspreadsheet\\src\\PhpSpreadsheet\\Reader\\Csv.php', 317)
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(317): ini_set('auto_detect_line_endings', '1')
+ 3 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(363): PhpOffice\PhpSpreadsheet\Reader\Csv->setAutoDetect('1')
+ 4 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(354): PhpOffice\PhpSpreadsheet\Reader\Csv->loadStringOrFile('C:\\Server\\tmp\\php5827.tmp', Object(PhpOffice\PhpSpreadsheet\Spreadsheet), false)
+ 5 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(268): PhpOffice\PhpSpreadsheet\Reader\Csv->loadIntoExisting('C:\\Server\\tmp\\php5827.tmp', Object(PhpOffice\PhpSpreadsheet\Spreadsheet))
+ 6 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\BaseReader.php(172): PhpOffice\PhpSpreadsheet\Reader\Csv->loadSpreadsheetFromFile('C:\\Server\\tmp\\php5827.tmp')
+ 7 APPPATH\Controllers\Tracking.php(91): PhpOffice\PhpSpreadsheet\Reader\BaseReader->load('C:\\Server\\tmp\\php5827.tmp')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 22:51:28 --> Uncaught PhpOffice\PhpSpreadsheet\Exception: Spreadsheet objects cannot be json encoded in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Spreadsheet.php:1655
+Stack trace:
+#0 [internal function]: PhpOffice\PhpSpreadsheet\Spreadsheet->jsonSerialize()
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(38): json_encode(Array, 960, 512)
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#6 {main}
+  thrown
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Spreadsheet.php on line 1655.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-27 22:51:52 --> auto_detect_line_endings is deprecated
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php on line 317.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'auto_detect_line_endings is deprecated', 'VENDORPATH\\phpoffice\\phpspreadsheet\\src\\PhpSpreadsheet\\Reader\\Csv.php', 317)
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(317): ini_set('auto_detect_line_endings', '1')
+ 3 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(363): PhpOffice\PhpSpreadsheet\Reader\Csv->setAutoDetect('1')
+ 4 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(354): PhpOffice\PhpSpreadsheet\Reader\Csv->loadStringOrFile('C:\\Server\\tmp\\phpB54C.tmp', Object(PhpOffice\PhpSpreadsheet\Spreadsheet), false)
+ 5 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(268): PhpOffice\PhpSpreadsheet\Reader\Csv->loadIntoExisting('C:\\Server\\tmp\\phpB54C.tmp', Object(PhpOffice\PhpSpreadsheet\Spreadsheet))
+ 6 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\BaseReader.php(172): PhpOffice\PhpSpreadsheet\Reader\Csv->loadSpreadsheetFromFile('C:\\Server\\tmp\\phpB54C.tmp')
+ 7 APPPATH\Controllers\Tracking.php(91): PhpOffice\PhpSpreadsheet\Reader\BaseReader->load('C:\\Server\\tmp\\phpB54C.tmp')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 22:51:52 --> Uncaught PhpOffice\PhpSpreadsheet\Exception: Spreadsheet objects cannot be json encoded in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Spreadsheet.php:1655
+Stack trace:
+#0 [internal function]: PhpOffice\PhpSpreadsheet\Spreadsheet->jsonSerialize()
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(38): json_encode(Array, 960, 512)
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#6 {main}
+  thrown
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Spreadsheet.php on line 1655.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-27 22:52:34 --> auto_detect_line_endings is deprecated
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php on line 317.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'auto_detect_line_endings is deprecated', 'VENDORPATH\\phpoffice\\phpspreadsheet\\src\\PhpSpreadsheet\\Reader\\Csv.php', 317)
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(317): ini_set('auto_detect_line_endings', '1')
+ 3 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(363): PhpOffice\PhpSpreadsheet\Reader\Csv->setAutoDetect('1')
+ 4 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(354): PhpOffice\PhpSpreadsheet\Reader\Csv->loadStringOrFile('C:\\Server\\tmp\\php57A8.tmp', Object(PhpOffice\PhpSpreadsheet\Spreadsheet), false)
+ 5 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(268): PhpOffice\PhpSpreadsheet\Reader\Csv->loadIntoExisting('C:\\Server\\tmp\\php57A8.tmp', Object(PhpOffice\PhpSpreadsheet\Spreadsheet))
+ 6 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\BaseReader.php(172): PhpOffice\PhpSpreadsheet\Reader\Csv->loadSpreadsheetFromFile('C:\\Server\\tmp\\php57A8.tmp')
+ 7 APPPATH\Controllers\Tracking.php(91): PhpOffice\PhpSpreadsheet\Reader\BaseReader->load('C:\\Server\\tmp\\php57A8.tmp')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 22:52:34 --> Uncaught PhpOffice\PhpSpreadsheet\Exception: Spreadsheet objects cannot be json encoded in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Spreadsheet.php:1655
+Stack trace:
+#0 [internal function]: PhpOffice\PhpSpreadsheet\Spreadsheet->jsonSerialize()
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(38): json_encode(Array, 960, 512)
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#6 {main}
+  thrown
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Spreadsheet.php on line 1655.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-27 22:59:18 --> auto_detect_line_endings is deprecated
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php on line 317.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'auto_detect_line_endings is deprecated', 'VENDORPATH\\phpoffice\\phpspreadsheet\\src\\PhpSpreadsheet\\Reader\\Csv.php', 317)
+ 2 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(317): ini_set('auto_detect_line_endings', '1')
+ 3 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(363): PhpOffice\PhpSpreadsheet\Reader\Csv->setAutoDetect('1')
+ 4 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(354): PhpOffice\PhpSpreadsheet\Reader\Csv->loadStringOrFile('C:\\Server\\tmp\\php81F8.tmp', Object(PhpOffice\PhpSpreadsheet\Spreadsheet), false)
+ 5 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\Csv.php(268): PhpOffice\PhpSpreadsheet\Reader\Csv->loadIntoExisting('C:\\Server\\tmp\\php81F8.tmp', Object(PhpOffice\PhpSpreadsheet\Spreadsheet))
+ 6 VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Reader\BaseReader.php(172): PhpOffice\PhpSpreadsheet\Reader\Csv->loadSpreadsheetFromFile('C:\\Server\\tmp\\php81F8.tmp')
+ 7 APPPATH\Controllers\Tracking.php(91): PhpOffice\PhpSpreadsheet\Reader\BaseReader->load('C:\\Server\\tmp\\php81F8.tmp')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 22:59:18 --> Uncaught PhpOffice\PhpSpreadsheet\Exception: Spreadsheet objects cannot be json encoded in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Spreadsheet.php:1655
+Stack trace:
+#0 [internal function]: PhpOffice\PhpSpreadsheet\Spreadsheet->jsonSerialize()
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Format\JSONFormatter.php(38): json_encode(Array, 960, 512)
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\API\ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Debug\Exceptions.php(141): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#6 {main}
+  thrown
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Spreadsheet.php on line 1655.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-27 23:28:51 --> App\Controllers\Tracking::failNotFound(): Argument #1 ($description) must be of type string, array given, called in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php on line 90
+in SYSTEMPATH\API\ResponseTrait.php on line 218.
+ 1 APPPATH\Controllers\Tracking.php(90): App\Controllers\Tracking->failNotFound([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 23:29:16 --> App\Controllers\Tracking::failNotFound(): Argument #1 ($description) must be of type string, array given, called in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php on line 90
+in SYSTEMPATH\API\ResponseTrait.php on line 218.
+ 1 APPPATH\Controllers\Tracking.php(90): App\Controllers\Tracking->failNotFound([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-27 23:30:16 --> App\Controllers\Tracking::failNotFound(): Argument #1 ($description) must be of type string, array given, called in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php on line 92
+in SYSTEMPATH\API\ResponseTrait.php on line 218.
+ 1 APPPATH\Controllers\Tracking.php(92): App\Controllers\Tracking->failNotFound([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

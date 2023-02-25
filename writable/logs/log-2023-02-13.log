@@ -1,0 +1,32 @@
+CRITICAL - 2023-02-13 01:19:41 --> Undefined variable $duplications
+in APPPATH\Controllers\Tracking.php on line 268.
+ 1 APPPATH\Controllers\Tracking.php(268): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $duplications', 'APPPATH\\Controllers\\Tracking.php', 268)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-13 08:45:28 --> Undefined variable $found_key
+in APPPATH\Controllers\Tracking.php on line 213.
+ 1 APPPATH\Controllers\Tracking.php(213): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $found_key', 'APPPATH\\Controllers\\Tracking.php', 213)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-13 08:52:01 --> Trying to access array offset on value of type int
+in APPPATH\Controllers\Tracking.php on line 248.
+ 1 APPPATH\Controllers\Tracking.php(248): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'APPPATH\\Controllers\\Tracking.php', 248)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-13 09:50:15 --> Trying to access array offset on value of type int
+in APPPATH\Controllers\Tracking.php on line 246.
+ 1 APPPATH\Controllers\Tracking.php(246): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'APPPATH\\Controllers\\Tracking.php', 246)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

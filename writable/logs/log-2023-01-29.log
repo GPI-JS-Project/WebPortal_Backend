@@ -1,0 +1,456 @@
+CRITICAL - 2023-01-29 04:00:57 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('SDB.UP.3.1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('SDB.UP.3.1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-29 04:01:09 --> strtolower(): Argument #1 ($string) must be of type string, array given
+in APPPATH\Controllers\Tracking.php on line 167.
+ 1 APPPATH\Controllers\Tracking.php(167): strtolower([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-29 04:03:23 --> parse_str() expects exactly 2 arguments, 1 given
+in APPPATH\Controllers\Tracking.php on line 167.
+ 1 APPPATH\Controllers\Tracking.php(167): parse_str([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-29 04:04:29 --> strtolower(): Argument #1 ($string) must be of type string, array given
+in APPPATH\Models\ModelUnit.php on line 23.
+ 1 APPPATH\Models\ModelUnit.php(23): strtolower([...])
+ 2 APPPATH\Controllers\Tracking.php(212): App\Models\ModelUnit->getUnitByPrefixNameTo([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-29 04:06:03 --> Undefined array key 1
+in APPPATH\Controllers\Tracking.php on line 121.
+ 1 APPPATH\Controllers\Tracking.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Tracking.php', 121)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-29 04:22:31 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-29 04:53:42 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('SDB.UP.3.1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('SDB.UP.3.1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-29 05:09:14 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-29 05:11:36 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-29 07:29:07 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-29 08:04:18 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('SDB.UP.3.1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('SDB.UP.3.1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-29 08:19:27 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-29 09:16:41 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('SDB.UP.3.1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('SDB.UP.3.1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-29 09:17:33 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('SDB.UP.3.1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('SDB.UP.3.1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-29 15:30:49 --> Too few arguments to function PhpOffice\PhpSpreadsheet\Worksheet\Worksheet::getCell(), 0 passed in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php on line 108 and exactly 1 expected
+in VENDORPATH\phpoffice\phpspreadsheet\src\PhpSpreadsheet\Worksheet\Worksheet.php on line 1248.
+ 1 APPPATH\Controllers\Tracking.php(108): PhpOffice\PhpSpreadsheet\Worksheet\Worksheet->getCell()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-29 16:09:16 --> Error connecting to the database: mysqli_sql_exception: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('mailtrackminerb...', 'n1571149_mailtr...', 'mailtracking202...', 'n1571149_testma...', 3306, '', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelOtentikasi.php(17): CodeIgniter\BaseModel->first()
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Helpers\jwt_helper.php(22): App\Models\ModelOtentikasi->getEmployee('198412192009021...', '198412192009021...')
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Filters\FilterJwt.php(22): validateJWT('eyJ0eXAiOiJKV1Q...')
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('tracking', 'before')
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelOtentikasi.php(17): CodeIgniter\BaseModel->first()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Helpers\jwt_helper.php(22): App\Models\ModelOtentikasi->getEmployee('198412192009021...', '198412192009021...')
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Filters\FilterJwt.php(22): validateJWT('eyJ0eXAiOiJKV1Q...')
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('tracking', 'before')
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#13 {main}
+CRITICAL - 2023-01-29 16:09:16 --> Unable to connect to the database.
+Main connection [MySQLi]: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `v_access`
+WHERE `employeeId` = :employeeId:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\ModelOtentikasi.php(17): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Helpers\jwt_helper.php(22): App\Models\ModelOtentikasi->getEmployee('198412192009021001', '198412192009021001')
+ 7 APPPATH\Filters\FilterJwt.php(22): validateJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuaXAiOiIxOTg0MTIxOTIwMDkwMjEwMDEiLCJwYXNzd29yZCI6IjE5ODQxMjE5MjAwOTAyMTAwMSIsImlhdCI6MTY3NTAyNzgzNSwiZXhwIjoxNjc1MDMxNDM1fQ.5tgg39--vo_6HtaI-TrL72Lr5NBoHZFvmqu_8NV3jBY')
+ 8 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 9 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('tracking', 'before')
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-29 16:09:26 --> Error connecting to the database: mysqli_sql_exception: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('mailtrackminerb...', 'n1571149_mailtr...', 'mailtracking202...', 'n1571149_testma...', 3306, '', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelOtentikasi.php(17): CodeIgniter\BaseModel->first()
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Helpers\jwt_helper.php(22): App\Models\ModelOtentikasi->getEmployee('198412192009021...', '198412192009021...')
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Filters\FilterJwt.php(22): validateJWT('eyJ0eXAiOiJKV1Q...')
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('tracking', 'before')
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelOtentikasi.php(17): CodeIgniter\BaseModel->first()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Helpers\jwt_helper.php(22): App\Models\ModelOtentikasi->getEmployee('198412192009021...', '198412192009021...')
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Filters\FilterJwt.php(22): validateJWT('eyJ0eXAiOiJKV1Q...')
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('tracking', 'before')
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#13 {main}
+CRITICAL - 2023-01-29 16:09:26 --> Unable to connect to the database.
+Main connection [MySQLi]: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `v_access`
+WHERE `employeeId` = :employeeId:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\ModelOtentikasi.php(17): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Helpers\jwt_helper.php(22): App\Models\ModelOtentikasi->getEmployee('198412192009021001', '198412192009021001')
+ 7 APPPATH\Filters\FilterJwt.php(22): validateJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuaXAiOiIxOTg0MTIxOTIwMDkwMjEwMDEiLCJwYXNzd29yZCI6IjE5ODQxMjE5MjAwOTAyMTAwMSIsImlhdCI6MTY3NTAyNzgzNSwiZXhwIjoxNjc1MDMxNDM1fQ.5tgg39--vo_6HtaI-TrL72Lr5NBoHZFvmqu_8NV3jBY')
+ 8 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 9 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('tracking', 'before')
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-29 16:09:36 --> Error connecting to the database: mysqli_sql_exception: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('mailtrackminerb...', 'n1571149_mailtr...', 'mailtracking202...', 'n1571149_testma...', 3306, '', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelOtentikasi.php(17): CodeIgniter\BaseModel->first()
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Helpers\jwt_helper.php(22): App\Models\ModelOtentikasi->getEmployee('198412192009021...', '198412192009021...')
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Filters\FilterJwt.php(22): validateJWT('eyJ0eXAiOiJKV1Q...')
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('tracking', 'before')
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelOtentikasi.php(17): CodeIgniter\BaseModel->first()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Helpers\jwt_helper.php(22): App\Models\ModelOtentikasi->getEmployee('198412192009021...', '198412192009021...')
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Filters\FilterJwt.php(22): validateJWT('eyJ0eXAiOiJKV1Q...')
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('tracking', 'before')
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#13 {main}
+CRITICAL - 2023-01-29 16:09:36 --> Unable to connect to the database.
+Main connection [MySQLi]: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `v_access`
+WHERE `employeeId` = :employeeId:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(267): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\ModelOtentikasi.php(17): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Helpers\jwt_helper.php(22): App\Models\ModelOtentikasi->getEmployee('198412192009021001', '198412192009021001')
+ 7 APPPATH\Filters\FilterJwt.php(22): validateJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuaXAiOiIxOTg0MTIxOTIwMDkwMjEwMDEiLCJwYXNzd29yZCI6IjE5ODQxMjE5MjAwOTAyMTAwMSIsImlhdCI6MTY3NTAyNzgzNSwiZXhwIjoxNjc1MDMxNDM1fQ.5tgg39--vo_6HtaI-TrL72Lr5NBoHZFvmqu_8NV3jBY')
+ 8 SYSTEMPATH\Filters\Filters.php(173): App\Filters\FilterJwt->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 9 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('tracking', 'before')
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-29 16:24:40 --> mysqli_sql_exception: Unknown column 'codePrefix' in 'where clause' in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelUnit.php(34): CodeIgniter\Model->__call('get', Array)
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(145): App\Models\ModelUnit->getUnitByPrefixNameTo('direkturptadhik...')
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#12 {main}
+CRITICAL - 2023-01-29 16:24:40 --> Unknown column 'codePrefix' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `v_position`
+WHERE `positionsPrefix` IN :positionsPrefix:
+OR `codePrefix` IN :codePrefix:', [...], false)
+ 2 SYSTEMPATH\Model.php(839): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\ModelUnit.php(34): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\Tracking.php(145): App\Models\ModelUnit->getUnitByPrefixNameTo('direkturptadhikaraciptamulia')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->importCsvToDb()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-29 17:06:18 --> Declaration of App\Models\ModelTracking::save($data) must be compatible with CodeIgniter\BaseModel::save($data): bool
+in APPPATH\Models\ModelTracking.php on line 37.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-29 17:13:14 --> App\Controllers\Tracking::failNotFound(): Argument #1 ($description) must be of type string, array given, called in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php on line 284
+in SYSTEMPATH\API\ResponseTrait.php on line 218.
+ 1 APPPATH\Controllers\Tracking.php(284): App\Controllers\Tracking->failNotFound([])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-29 17:22:25 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('SDB.UP.3.1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('SDB.UP.3.1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-29 17:22:26 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('SDB.UP.3.1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('SDB.UP.3.1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-29 17:29:57 --> current(): Argument #1 ($array) must be of type array, string given
+in SYSTEMPATH\Database\BaseBuilder.php on line 1820.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1820): current('[{"agendaNumber":"0001/MB.04//2023","receiptDate":"01-01-2023","realDate":"01-01-2023","type":"Segera","from":"Direktorat Jenderal Mineral dan Batubara","to":"Direktur PT Adhikara Cipta Mulia","description":"Asli","note":"sample"},{"agendaNumber":"0001/MB.01//2023","receiptDate":"01-01-2023","realDate":"01-01-2023","type":"Segera","from":"Sekretariat Direktorat Jenderal Mineral dan Batubara","to":"Direktur Jenderal Mineral dan Batubara","description":"Tembusan","note":"sample"},{"agendaNumber":"0003/MB.01//2023","receiptDate":"01-01-2023","realDate":"01-01-2023","type":"Segera","from":"Sekretariat Direktorat Jenderal Mineral dan Batubara","to":"Direktur Pembinaan Program Mineral dan Batubara; Direktur Pembinaan Pengusahaan Mineral; Direktur Pembinaan Pengusahaan Batubara; Direktur Penerimaan Mineral dan Batubara; Direktur Teknik dan Lingkungan Mineral dan Batubara","description":"Asli","note":"sample"},{"agendaNumber":"0003/MB.04//2023","receiptDate":"01-01-2023","realDate":"01-01-2023","type":"Segera","from":"Direktorat Pembinaan Pengusahaan Mineral","to":"DJB","description":"Asli","note":"sample"},{"agendaNumber":"0002/MB.04//2023","receiptDate":"01-01-2023","realDate":"01-01-2023","type":"Segera","from":"Direktorat Pembinaan Pengusahaan Mineral","to":"DJB","description":"Asli","note":"sample"},{"agendaNumber":"0004/MB.04//2023","receiptDate":"01-01-2023","realDate":"01-01-2023","type":"Segera","from":"Direktorat Jenderal Mineral dan Batubara","to":"Direksi PT Aneka Tambang Tbk. UBPE Pongkor","description":"Asli","note":"sample"},{"agendaNumber":"0005/MB.04//2023","receiptDate":"01-01-2023","realDate":"01-01-2023","type":"Segera","from":"Direktorat Jenderal Mineral dan Batubara","to":"Direksi PT Aneka Tambang Tbk. UBPE Pongkor","description":"Asli","note":"sample"},{"agendaNumber":"0005/KP.05/21/2023","receiptDate":"02-01-2023","realDate":"30-12-2022","type":"Segera","from":"Biro Sumber Daya Manusia","to":"Sekretaris Direktorat Jenderal Mineral dan Batubara","description":"Asli","note":"sample"},{"agendaNumber":"0007/MB.07/39/2023","receiptDate":"02-01-2023","realDate":"29-12-2022","type":"Segera","from":"PT Indo Pancadasa Argotama","to":"Direktur Teknik dan Lingkungan Mineral dan Batubara","description":"Asli","note":"sample"},{"agendaNumber":"0008/MB.07/39/2023","receiptDate":"02-01-2023","realDate":"28-12-2022","type":"Segera","from":"PT RAIHAN CATURPUTRA ","to":"Direktur Teknik dan Lingkungan Mineral dan Batubara","description":"Asli","note":"sample"},{"agendaNumber":"0005/MB.07/39/2023","receiptDate":"02-01-2023","realDate":"29-12-2022","type":"Biasa","from":"PT Nusantara Adidaya Investama","to":"Direktur Teknik dan Lingkungan Mineral dan Batubara","description":"Asli","note":"sample"},{"agendaNumber":"0010/MB.07/39/2023","receiptDate":"02-01-2023","realDate":"28-12-2022","type":"Segera","from":"PT Tri Usaha Baru","to":"Direktur Teknik dan Lingkungan Mineral dan Batubara","description":"Asli","note":"sample"}]')
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2175): CodeIgniter\Database\BaseBuilder->setData('[{"agendaNumber":"0001/MB.04//2023","receiptDate":"01-01-2023","realDate":"01-01-2023","type":"Segera","from":"Direktorat Jenderal Mineral dan Batubara","to":"Direktur PT Adhikara Cipta Mulia","description":"Asli","note":"sample"},{"agendaNumber":"0001/MB.01//2023","receiptDate":"01-01-2023","realDate":"01-01-2023","type":"Segera","from":"Sekretariat Direktorat Jenderal Mineral dan Batubara","to":"Direktur Jenderal Mineral dan Batubara","description":"Tembusan","note":"sample"},{"agendaNumber":"0003/MB.01//2023","receiptDate":"01-01-2023","realDate":"01-01-2023","type":"Segera","from":"Sekretariat Direktorat Jenderal Mineral dan Batubara","to":"Direktur Pembinaan Program Mineral dan Batubara; Direktur Pembinaan Pengusahaan Mineral; Direktur Pembinaan Pengusahaan Batubara; Direktur Penerimaan Mineral dan Batubara; Direktur Teknik dan Lingkungan Mineral dan Batubara","description":"Asli","note":"sample"},{"agendaNumber":"0003/MB.04//2023","receiptDate":"01-01-2023","realDate":"01-01-2023","type":"Segera","from":"Direktorat Pembinaan Pengusahaan Mineral","to":"DJB","description":"Asli","note":"sample"},{"agendaNumber":"0002/MB.04//2023","receiptDate":"01-01-2023","realDate":"01-01-2023","type":"Segera","from":"Direktorat Pembinaan Pengusahaan Mineral","to":"DJB","description":"Asli","note":"sample"},{"agendaNumber":"0004/MB.04//2023","receiptDate":"01-01-2023","realDate":"01-01-2023","type":"Segera","from":"Direktorat Jenderal Mineral dan Batubara","to":"Direksi PT Aneka Tambang Tbk. UBPE Pongkor","description":"Asli","note":"sample"},{"agendaNumber":"0005/MB.04//2023","receiptDate":"01-01-2023","realDate":"01-01-2023","type":"Segera","from":"Direktorat Jenderal Mineral dan Batubara","to":"Direksi PT Aneka Tambang Tbk. UBPE Pongkor","description":"Asli","note":"sample"},{"agendaNumber":"0005/KP.05/21/2023","receiptDate":"02-01-2023","realDate":"30-12-2022","type":"Segera","from":"Biro Sumber Daya Manusia","to":"Sekretaris Direktorat Jenderal Mineral dan Batubara","description":"Asli","note":"sample"},{"agendaNumber":"0007/MB.07/39/2023","receiptDate":"02-01-2023","realDate":"29-12-2022","type":"Segera","from":"PT Indo Pancadasa Argotama","to":"Direktur Teknik dan Lingkungan Mineral dan Batubara","description":"Asli","note":"sample"},{"agendaNumber":"0008/MB.07/39/2023","receiptDate":"02-01-2023","realDate":"28-12-2022","type":"Segera","from":"PT RAIHAN CATURPUTRA ","to":"Direktur Teknik dan Lingkungan Mineral dan Batubara","description":"Asli","note":"sample"},{"agendaNumber":"0005/MB.07/39/2023","receiptDate":"02-01-2023","realDate":"29-12-2022","type":"Biasa","from":"PT Nusantara Adidaya Investama","to":"Direktur Teknik dan Lingkungan Mineral dan Batubara","description":"Asli","note":"sample"},{"agendaNumber":"0010/MB.07/39/2023","receiptDate":"02-01-2023","realDate":"28-12-2022","type":"Segera","from":"PT Tri Usaha Baru","to":"Direktur Teknik dan Lingkungan Mineral dan Batubara","description":"Asli","note":"sample"}]', null)
+ 3 APPPATH\Models\ModelTracking.php(41): CodeIgniter\Database\BaseBuilder->insertBatch('[{"agendaNumber":"0001/MB.04//2023","receiptDate":"01-01-2023","realDate":"01-01-2023","type":"Segera","from":"Direktorat Jenderal Mineral dan Batubara","to":"Direktur PT Adhikara Cipta Mulia","description":"Asli","note":"sample"},{"agendaNumber":"0001/MB.01//2023","receiptDate":"01-01-2023","realDate":"01-01-2023","type":"Segera","from":"Sekretariat Direktorat Jenderal Mineral dan Batubara","to":"Direktur Jenderal Mineral dan Batubara","description":"Tembusan","note":"sample"},{"agendaNumber":"0003/MB.01//2023","receiptDate":"01-01-2023","realDate":"01-01-2023","type":"Segera","from":"Sekretariat Direktorat Jenderal Mineral dan Batubara","to":"Direktur Pembinaan Program Mineral dan Batubara; Direktur Pembinaan Pengusahaan Mineral; Direktur Pembinaan Pengusahaan Batubara; Direktur Penerimaan Mineral dan Batubara; Direktur Teknik dan Lingkungan Mineral dan Batubara","description":"Asli","note":"sample"},{"agendaNumber":"0003/MB.04//2023","receiptDate":"01-01-2023","realDate":"01-01-2023","type":"Segera","from":"Direktorat Pembinaan Pengusahaan Mineral","to":"DJB","description":"Asli","note":"sample"},{"agendaNumber":"0002/MB.04//2023","receiptDate":"01-01-2023","realDate":"01-01-2023","type":"Segera","from":"Direktorat Pembinaan Pengusahaan Mineral","to":"DJB","description":"Asli","note":"sample"},{"agendaNumber":"0004/MB.04//2023","receiptDate":"01-01-2023","realDate":"01-01-2023","type":"Segera","from":"Direktorat Jenderal Mineral dan Batubara","to":"Direksi PT Aneka Tambang Tbk. UBPE Pongkor","description":"Asli","note":"sample"},{"agendaNumber":"0005/MB.04//2023","receiptDate":"01-01-2023","realDate":"01-01-2023","type":"Segera","from":"Direktorat Jenderal Mineral dan Batubara","to":"Direksi PT Aneka Tambang Tbk. UBPE Pongkor","description":"Asli","note":"sample"},{"agendaNumber":"0005/KP.05/21/2023","receiptDate":"02-01-2023","realDate":"30-12-2022","type":"Segera","from":"Biro Sumber Daya Manusia","to":"Sekretaris Direktorat Jenderal Mineral dan Batubara","description":"Asli","note":"sample"},{"agendaNumber":"0007/MB.07/39/2023","receiptDate":"02-01-2023","realDate":"29-12-2022","type":"Segera","from":"PT Indo Pancadasa Argotama","to":"Direktur Teknik dan Lingkungan Mineral dan Batubara","description":"Asli","note":"sample"},{"agendaNumber":"0008/MB.07/39/2023","receiptDate":"02-01-2023","realDate":"28-12-2022","type":"Segera","from":"PT RAIHAN CATURPUTRA ","to":"Direktur Teknik dan Lingkungan Mineral dan Batubara","description":"Asli","note":"sample"},{"agendaNumber":"0005/MB.07/39/2023","receiptDate":"02-01-2023","realDate":"29-12-2022","type":"Biasa","from":"PT Nusantara Adidaya Investama","to":"Direktur Teknik dan Lingkungan Mineral dan Batubara","description":"Asli","note":"sample"},{"agendaNumber":"0010/MB.07/39/2023","receiptDate":"02-01-2023","realDate":"28-12-2022","type":"Segera","from":"PT Tri Usaha Baru","to":"Direktur Teknik dan Lingkungan Mineral dan Batubara","description":"Asli","note":"sample"}]')
+ 4 APPPATH\Controllers\Tracking.php(279): App\Models\ModelTracking->saveData('[{"agendaNumber":"0001/MB.04//2023","receiptDate":"01-01-2023","realDate":"01-01-2023","type":"Segera","from":"Direktorat Jenderal Mineral dan Batubara","to":"Direktur PT Adhikara Cipta Mulia","description":"Asli","note":"sample"},{"agendaNumber":"0001/MB.01//2023","receiptDate":"01-01-2023","realDate":"01-01-2023","type":"Segera","from":"Sekretariat Direktorat Jenderal Mineral dan Batubara","to":"Direktur Jenderal Mineral dan Batubara","description":"Tembusan","note":"sample"},{"agendaNumber":"0003/MB.01//2023","receiptDate":"01-01-2023","realDate":"01-01-2023","type":"Segera","from":"Sekretariat Direktorat Jenderal Mineral dan Batubara","to":"Direktur Pembinaan Program Mineral dan Batubara; Direktur Pembinaan Pengusahaan Mineral; Direktur Pembinaan Pengusahaan Batubara; Direktur Penerimaan Mineral dan Batubara; Direktur Teknik dan Lingkungan Mineral dan Batubara","description":"Asli","note":"sample"},{"agendaNumber":"0003/MB.04//2023","receiptDate":"01-01-2023","realDate":"01-01-2023","type":"Segera","from":"Direktorat Pembinaan Pengusahaan Mineral","to":"DJB","description":"Asli","note":"sample"},{"agendaNumber":"0002/MB.04//2023","receiptDate":"01-01-2023","realDate":"01-01-2023","type":"Segera","from":"Direktorat Pembinaan Pengusahaan Mineral","to":"DJB","description":"Asli","note":"sample"},{"agendaNumber":"0004/MB.04//2023","receiptDate":"01-01-2023","realDate":"01-01-2023","type":"Segera","from":"Direktorat Jenderal Mineral dan Batubara","to":"Direksi PT Aneka Tambang Tbk. UBPE Pongkor","description":"Asli","note":"sample"},{"agendaNumber":"0005/MB.04//2023","receiptDate":"01-01-2023","realDate":"01-01-2023","type":"Segera","from":"Direktorat Jenderal Mineral dan Batubara","to":"Direksi PT Aneka Tambang Tbk. UBPE Pongkor","description":"Asli","note":"sample"},{"agendaNumber":"0005/KP.05/21/2023","receiptDate":"02-01-2023","realDate":"30-12-2022","type":"Segera","from":"Biro Sumber Daya Manusia","to":"Sekretaris Direktorat Jenderal Mineral dan Batubara","description":"Asli","note":"sample"},{"agendaNumber":"0007/MB.07/39/2023","receiptDate":"02-01-2023","realDate":"29-12-2022","type":"Segera","from":"PT Indo Pancadasa Argotama","to":"Direktur Teknik dan Lingkungan Mineral dan Batubara","description":"Asli","note":"sample"},{"agendaNumber":"0008/MB.07/39/2023","receiptDate":"02-01-2023","realDate":"28-12-2022","type":"Segera","from":"PT RAIHAN CATURPUTRA ","to":"Direktur Teknik dan Lingkungan Mineral dan Batubara","description":"Asli","note":"sample"},{"agendaNumber":"0005/MB.07/39/2023","receiptDate":"02-01-2023","realDate":"29-12-2022","type":"Biasa","from":"PT Nusantara Adidaya Investama","to":"Direktur Teknik dan Lingkungan Mineral dan Batubara","description":"Asli","note":"sample"},{"agendaNumber":"0010/MB.07/39/2023","receiptDate":"02-01-2023","realDate":"28-12-2022","type":"Segera","from":"PT Tri Usaha Baru","to":"Direktur Teknik dan Lingkungan Mineral dan Batubara","description":"Asli","note":"sample"}]')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->create()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-29 17:50:23 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('SDB.UP.3.1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('SDB.UP.3.1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-29 19:31:49 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('SDB.UP.3.1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('SDB.UP.3.1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-29 22:26:09 --> mysqli_sql_exception: Column count doesn't match value count at row 1 in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', NULL, false)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2178): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelTracking.php(41): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(285): App\Models\ModelTracking->saveData(Array)
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Tracking->create()
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#12 {main}
+CRITICAL - 2023-01-29 22:26:09 --> Column count doesn't match value count at row 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tracking` ()
+VALUES (\'0003/MB.01//2023\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'sample\',\'2/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DBP\',\'Segera\'), (\'0003/MB.01//2023\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'sample\',\'2/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DBM\',\'Segera\'), (\'0003/MB.01//2023\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'sample\',\'2/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DBB\',\'Segera\'), (\'0003/MB.01//2023\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'sample\',\'2/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DBN\',\'Segera\'), (\'0003/MB.01//2023\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'sample\',\'2/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DBT\',\'Segera\'), (\'0001/KP.06//2023\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'sample\',\'2/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DBP\',\'Segera\'), (\'0001/KP.06//2023\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'sample\',\'2/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DBM\',\'Segera\'), (\'0001/KP.06//2023\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'sample\',\'2/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DBB\',\'Segera\'), (\'0001/KP.06//2023\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'sample\',\'2/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DBN\',\'Segera\'), (\'0001/KP.06//2023\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'sample\',\'2/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DBT\',\'Segera\'), ()', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2178): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\ModelTracking.php(41): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\Tracking.php(285): App\Models\ModelTracking->saveData([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->create()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-29 22:28:44 --> mysqli_sql_exception: Column count doesn't match value count at row 1 in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', NULL, false)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2178): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelTracking.php(41): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(285): App\Models\ModelTracking->saveData(Array)
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Tracking->create()
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#12 {main}
+CRITICAL - 2023-01-29 22:28:44 --> Column count doesn't match value count at row 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tracking` ()
+VALUES (\'0003/MB.01//2023\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'Hasil Pembahasan Satgas Perizinan 30 Desember 2022\',\'2/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DBP\',\'Segera\'), (\'0003/MB.01//2023\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'Hasil Pembahasan Satgas Perizinan 30 Desember 2022\',\'2/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DBM\',\'Segera\'), (\'0003/MB.01//2023\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'Hasil Pembahasan Satgas Perizinan 30 Desember 2022\',\'2/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DBB\',\'Segera\'), (\'0003/MB.01//2023\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'Hasil Pembahasan Satgas Perizinan 30 Desember 2022\',\'2/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DBN\',\'Segera\'), (\'0003/MB.01//2023\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'Hasil Pembahasan Satgas Perizinan 30 Desember 2022\',\'2/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DBT\',\'Segera\'), (\'0001/KP.06//2023\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'Hasil Pembahasan Satgas Perizinan 30 Desember 2022\',\'2/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DBP\',\'Segera\'), (\'0001/KP.06//2023\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'Hasil Pembahasan Satgas Perizinan 30 Desember 2022\',\'2/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DBM\',\'Segera\'), (\'0001/KP.06//2023\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'Hasil Pembahasan Satgas Perizinan 30 Desember 2022\',\'2/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DBB\',\'Segera\'), (\'0001/KP.06//2023\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'Hasil Pembahasan Satgas Perizinan 30 Desember 2022\',\'2/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DBN\',\'Segera\'), (\'0001/KP.06//2023\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'Hasil Pembahasan Satgas Perizinan 30 Desember 2022\',\'2/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DBT\',\'Segera\'), ()', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2178): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\ModelTracking.php(41): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\Tracking.php(285): App\Models\ModelTracking->saveData([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->create()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-01-29 22:54:12 --> mysqli_sql_exception: Unknown column 'status' in 'field list' in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tr...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tr...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tr...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tr...', NULL, false)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2178): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelTracking.php(41): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Tracking.php(285): App\Models\ModelTracking->saveData(Array)
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Tracking->create()
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#12 {main}
+CRITICAL - 2023-01-29 22:54:12 --> Unknown column 'status' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tracking` (`agendaNumber`, `description`, `from`, `isUnknown`, `note`, `number`, `realDate`, `receiptDate`, `status`, `to`, `type`)
+VALUES (\'0001/MB.01//2023\',\'Laporan Satgas Penyelesaian Perizinan Mineral dan Batubara Periode sampai dengan tanggal 29 Desember 2022\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'Laporan Satgas Penyelesaian Perizinan Mineral dan Batubara Periode sampai dengan tanggal 29 Desember 2022\',\'1/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DJB\',\'Segera\'), (\'0002/MB.01//2023\',\'Laporan Satgas Penyelesaian Perizinan Mineral dan Batubara Periode sampai dengan tanggal 29 Desember 2022\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'Laporan Satgas Penyelesaian Perizinan Mineral dan Batubara Periode sampai dengan tanggal 29 Desember 2022\',\'1/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DJB\',\'Segera\'), (\'0003/MB.01//2023\',\'Hasil Pembahasan Satgas Perizinan 30 Desember 2022\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'Hasil Pembahasan Satgas Perizinan 30 Desember 2022\',\'2/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DBP\',\'Segera\'), (\'0003/MB.01//2023\',\'Hasil Pembahasan Satgas Perizinan 30 Desember 2022\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'Hasil Pembahasan Satgas Perizinan 30 Desember 2022\',\'2/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DBM\',\'Segera\'), (\'0003/MB.01//2023\',\'Hasil Pembahasan Satgas Perizinan 30 Desember 2022\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'Hasil Pembahasan Satgas Perizinan 30 Desember 2022\',\'2/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DBB\',\'Segera\'), (\'0003/MB.01//2023\',\'Hasil Pembahasan Satgas Perizinan 30 Desember 2022\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'Hasil Pembahasan Satgas Perizinan 30 Desember 2022\',\'2/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DBN\',\'Segera\'), (\'0003/MB.01//2023\',\'Hasil Pembahasan Satgas Perizinan 30 Desember 2022\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'Hasil Pembahasan Satgas Perizinan 30 Desember 2022\',\'2/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DBT\',\'Segera\'), (\'0001/KP.06//2023\',\'Hasil Pembahasan Satgas Perizinan 30 Desember 2022\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'Hasil Pembahasan Satgas Perizinan 30 Desember 2022\',\'2/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DBP\',\'Segera\'), (\'0001/KP.06//2023\',\'Hasil Pembahasan Satgas Perizinan 30 Desember 2022\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'Hasil Pembahasan Satgas Perizinan 30 Desember 2022\',\'2/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DBM\',\'Segera\'), (\'0001/KP.06//2023\',\'Hasil Pembahasan Satgas Perizinan 30 Desember 2022\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'Hasil Pembahasan Satgas Perizinan 30 Desember 2022\',\'2/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DBB\',\'Segera\'), (\'0001/KP.06//2023\',\'Hasil Pembahasan Satgas Perizinan 30 Desember 2022\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'Hasil Pembahasan Satgas Perizinan 30 Desember 2022\',\'2/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DBN\',\'Segera\'), (\'0001/KP.06//2023\',\'Hasil Pembahasan Satgas Perizinan 30 Desember 2022\',\'Sekretariat Direktorat Jenderal Mineral dan Batubara\',\'N\',\'Hasil Pembahasan Satgas Perizinan 30 Desember 2022\',\'2/MB.01/SDB.L/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DBT\',\'Segera\'), (\'0001/KP.06//2023\',\'Pemberitahuan Penilaian DUPAK Jabatan Fungsional Penyelidik Bumi Unit Kerja Badan Geologi\',\'Sekretariat Badan Geologi\',\'N\',\'Pemberitahuan Penilaian DUPAK Jabatan Fungsional Penyelidik Bumi Unit Kerja Badan Geologi\',\'B-1220/KP.06/SBG/2022\',\'30-12-2022\',\'01-01-2023\',\'success\',\'DJB\',\'Segera\'), (\'0003/MB.04//2023\',\'Draft Persetujuan RKAB 2023 PT Total Prima Indonesia SK003\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'N\',\'Draft Persetujuan RKAB 2023 PT Total Prima Indonesia SK003\',\'2/MB.04/DBM.OP/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DJB\',\'Segera\'), (\'0002/MB.04//2023\',\'Draft Persetujuan RKAB 2023 PT Total Prima Indonesia SK003\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'N\',\'Draft Persetujuan RKAB 2023 PT Total Prima Indonesia SK003\',\'2/MB.04/DBM.OP/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DJB\',\'Segera\'), (\'0004/MB.04//2023\',\'Draft Persetujuan RKAB 2023 PT Total Prima Indonesia SK003\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'N\',\'Draft Persetujuan RKAB 2023 PT Total Prima Indonesia SK003\',\'2/MB.04/DBM.OP/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DJB\',\'Segera\'), (\'0004/MB.04//2023\',\'Persetujuan Rencana Kerja dan Anggaran Biaya (RKAB) Tahun 2023 PT Ifishdeco Tbk\\n\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'N\',\'Persetujuan Rencana Kerja dan Anggaran Biaya (RKAB) Tahun 2023 PT Ifishdeco Tbk\\n\',\'1/MB.04/DBM.OP/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DJB\',\'Segera\'), (\'0004/MB.04//2023\',\'Persetujuan Rencana Kerja dan Anggaran Biaya (RKAB) Tahun 2023 PT Ifishdeco Tbk\\n\',\'Direktorat Pembinaan Pengusahaan Mineral\',\'N\',\'Persetujuan Rencana Kerja dan Anggaran Biaya (RKAB) Tahun 2023 PT Ifishdeco Tbk\\n\',\'1/MB.04/DBM.OP/2023\',\'01-01-2023\',\'01-01-2023\',\'success\',\'DJB\',\'Segera\'), (\'0006/MB.07/39/2023\',\'Itinerary Kegiatan Bulan K3 Nasional PT. AMNT Tanggal 11-13 Januari  2023\',\'PT Amman Mieral Nusa Tenggara\',\'N\',\'Itinerary Kegiatan Bulan K3 Nasional PT. AMNT Tanggal 11-13 Januari  2023\',\'STN/0001/2023\',\'02-01-2023\',\'02-01-2023\',\'success\',\'DBT\',\'Segera\'), (\'0007/MB.07/39/2023\',\'Permohonan Persetujuan RKAB Tahun 2023\',\'PT Indo Pancadasa Argotama\',\'N\',\'Permohonan Persetujuan RKAB Tahun 2023\',\'042/XII/IPA/ESDM/2022\',\'29-12-2022\',\'02-01-2023\',\'success\',\'DBT\',\'Segera\'), (\'0008/MB.07/39/2023\',\'Permohonan Pengesahan KTT\',\'PT RAIHAN CATURPUTRA \',\'N\',\'Permohonan Pengesahan KTT\',\'S. PEM/035/HR-RCP/XII/2022\',\'28-12-2022\',\'02-01-2023\',\'success\',\'DBT\',\'Segera\'), (\'0009/MB.07/39/2023\',\'Balasan Surat Nomor B-7747/MB.07/DBT/2022 Tertanggal 28 Desember 2022\',\'PT Nusantara Adidaya Investama\',\'N\',\'Balasan Surat Nomor B-7747/MB.07/DBT/2022 Tertanggal 28 Desember 2022\',\'NAI/28/XII-22\',\'29-12-2022\',\'02-01-2023\',\'success\',\'DBT\',\'Biasa\'), (\'0005/MB.07/39/2023\',\'Balasan Surat Nomor B-7747/MB.07/DBT/2022 Tertanggal 28 Desember 2022\',\'PT Nusantara Adidaya Investama\',\'N\',\'Balasan Surat Nomor B-7747/MB.07/DBT/2022 Tertanggal 28 Desember 2022\',\'NAI/28/XII-22\',\'29-12-2022\',\'02-01-2023\',\'success\',\'DBT\',\'Biasa\'), (\'0010/MB.07/39/2023\',\'Permohonan Maaf Karena Belum Melakukan Apel Pagi dan Inspeksi Bersama Peningkatan Kewaspadaan Dalam Upaya Pencegahan Kecelakaan Tambang\',\'PT Tri Usaha Baru\',\'N\',\'Permohonan Maaf Karena Belum Melakukan Apel Pagi dan Inspeksi Bersama Peningkatan Kewaspadaan Dalam Upaya Pencegahan Kecelakaan Tambang\',\'073/TUB/KTT/XII/2022\',\'28-12-2022\',\'02-01-2023\',\'success\',\'DBT\',\'Segera\'), (\'0001/MB.04//2023\',\'Persetujuan RKAB Tahun 2023 PT Adhikara Cipta Mulia (SK IUP OP Nomor 411 Tahun 2011) \',\'Direktorat Jenderal Mineral dan Batubara\',\'Y\',\'Persetujuan RKAB Tahun 2023 PT Adhikara Cipta Mulia (SK IUP OP Nomor 411 Tahun 2011) \',\'T-1/MB.04/DJB.M/2023\',\'01-01-2023\',\'01-01-2023\',\'info\',\'Direktur PT Adhikara Cipta Mulia\',\'Segera\'), (\'0004/MB.04//2023\',\'Persetujuan RKAB Tahun 2023 PT ANTAM Tbk. UBPE Pongkor  (SK IUP OP Nomor 171/1/IUP/PMDN/2020)\',\'Direktorat Jenderal Mineral dan Batubara\',\'Y\',\'Persetujuan RKAB Tahun 2023 PT ANTAM Tbk. UBPE Pongkor  (SK IUP OP Nomor 171/1/IUP/PMDN/2020)\',\'T-2/MB.04/DJB.M/2023\',\'01-01-2023\',\'01-01-2023\',\'info\',\'Direksi PT Aneka Tambang Tbk. UBPE Pongkor\',\'Segera\'), (\'0005/MB.04//2023\',\'Persetujuan RKAB Tahun 2023 PT ANTAM Tbk. UBPE Pongkor  (SK IUP OP Nomor 171/1/IUP/PMDN/2020)\',\'Direktorat Jenderal Mineral dan Batubara\',\'Y\',\'Persetujuan RKAB Tahun 2023 PT ANTAM Tbk. UBPE Pongkor  (SK IUP OP Nomor 171/1/IUP/PMDN/2020)\',\'T-2/MB.04/DJB.M/2023\',\'01-01-2023\',\'01-01-2023\',\'info\',\'Direksi PT Aneka Tambang Tbk. UBPE Pongkor\',\'Segera\'), (\'0005/KP.05/21/2023\',\'Permohonan Pindah Antar Instansi PNS a.n. Sdri. Jayani Siraung, S.T., M.Si.\',\'Biro Sumber Daya Manusia\',\'Y\',\'Permohonan Pindah Antar Instansi PNS a.n. Sdri. Jayani Siraung, S.T., M.Si.\',\'T-2224/KP.05/SJP.2/2022\',\'30-12-2022\',\'02-01-2023\',\'info\',\'Sekretaris Direktorat Jenderal Mineral dan Batubara\',\'Segera\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2178): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Models\ModelTracking.php(41): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 APPPATH\Controllers\Tracking.php(285): App\Models\ModelTracking->saveData([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->create()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-29 23:10:04 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('SDB.UP.3.1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('SDB.UP.3.1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-29 23:10:23 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('SDB.UP.3.1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('SDB.UP.3.1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-29 23:22:48 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('SDB.UP.3.1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('SDB.UP.3.1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-29 23:23:10 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('SDB.UP.3.1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('SDB.UP.3.1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-29 23:32:01 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('SDB.UP.3.1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('SDB.UP.3.1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

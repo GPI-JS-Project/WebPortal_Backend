@@ -1,0 +1,118 @@
+CRITICAL - 2023-01-24 01:31:20 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('Sub Kelompok Kerja K')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('Sub Kelompok Kerja K')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-24 01:31:54 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('Sub Kelompok Kerja K')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('Sub Kelompok Kerja K')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-24 01:52:44 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('Sub Kelompok Kerja K')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('Sub Kelompok Kerja K')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-24 05:18:21 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('Sub Kelompok Kerja K')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('Sub Kelompok Kerja K')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-24 05:18:35 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('Sub Kelompok Kerja K')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('Sub Kelompok Kerja K')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-24 20:49:22 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('SDB.UP.3.1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('SDB.UP.3.1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-24 21:32:07 --> Class "App\Models\ModelLookup" not found
+in APPPATH\Controllers\Lookup.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Lookup->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-24 21:32:39 --> Class "App\Models\ModelLookup" not found
+in APPPATH\Controllers\Lookup.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Lookup->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-24 21:33:24 --> Undefined variable $data
+in APPPATH\Controllers\Lookup.php on line 25.
+ 1 APPPATH\Controllers\Lookup.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Lookup.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Lookup->show('LEVEL')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lookup))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-24 22:21:52 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('SDB.UP.3.1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('SDB.UP.3.1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-24 22:59:26 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('SDB.UP.3.1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('SDB.UP.3.1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-24 22:59:38 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('SDB.UP.3.1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('SDB.UP.3.1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-24 22:59:47 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('SDB.UP.3.1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('SDB.UP.3.1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-24 23:21:16 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('SDB.UP.3.1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('SDB.UP.3.1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-01-24 23:45:46 --> Class "App\Models\Exception" not found
+in APPPATH\Models\ModelEmployee.php on line 18.
+ 1 APPPATH\Controllers\Employee.php(23): App\Models\ModelEmployee->getEmployeeByParent('SDB.UP.3.1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Employee->employeeByParent('SDB.UP.3.1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

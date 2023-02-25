@@ -1,0 +1,22 @@
+CRITICAL - 2023-02-12 06:26:07 --> whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 926.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(813): CodeIgniter\Database\BaseBuilder->_whereIn('code', 'DBM', false, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(839): CodeIgniter\Database\BaseBuilder->whereIn('code', 'DBM')
+ 3 APPPATH\Models\ModelOutbox.php(18): CodeIgniter\Model->__call('whereIn', [...])
+ 4 APPPATH\Controllers\Outbox.php(19): App\Models\ModelOutbox->getOutboxByUnit('DBM')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Outbox->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Outbox))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-12 06:26:18 --> whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 926.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(813): CodeIgniter\Database\BaseBuilder->_whereIn('code', 'DBM', false, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(839): CodeIgniter\Database\BaseBuilder->whereIn('code', 'DBM')
+ 3 APPPATH\Models\ModelOutbox.php(18): CodeIgniter\Model->__call('whereIn', [...])
+ 4 APPPATH\Controllers\Outbox.php(19): App\Models\ModelOutbox->getOutboxByUnit('DBM')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Outbox->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Outbox))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

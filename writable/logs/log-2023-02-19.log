@@ -1,0 +1,682 @@
+ERROR - 2023-02-19 09:28:15 --> mysqli_sql_exception: PROCEDURE n1571149_testmailtracking.getInbox does not exist in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 09:28:15 --> PROCEDURE n1571149_testmailtracking.getInbox does not exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 09:28:16 --> mysqli_sql_exception: PROCEDURE n1571149_testmailtracking.getInbox does not exist in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 09:28:16 --> PROCEDURE n1571149_testmailtracking.getInbox does not exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 09:28:27 --> mysqli_sql_exception: PROCEDURE n1571149_testmailtracking.getInbox does not exist in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 09:28:27 --> PROCEDURE n1571149_testmailtracking.getInbox does not exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 09:29:03 --> mysqli_sql_exception: PROCEDURE n1571149_testmailtracking.getInbox does not exist in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 09:29:03 --> PROCEDURE n1571149_testmailtracking.getInbox does not exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 09:29:09 --> mysqli_sql_exception: PROCEDURE n1571149_testmailtracking.getInbox does not exist in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 09:29:09 --> PROCEDURE n1571149_testmailtracking.getInbox does not exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 09:29:10 --> mysqli_sql_exception: PROCEDURE n1571149_testmailtracking.getInbox does not exist in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 09:29:10 --> PROCEDURE n1571149_testmailtracking.getInbox does not exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 09:29:12 --> mysqli_sql_exception: PROCEDURE n1571149_testmailtracking.getInbox does not exist in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 09:29:12 --> PROCEDURE n1571149_testmailtracking.getInbox does not exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 09:29:14 --> mysqli_sql_exception: PROCEDURE n1571149_testmailtracking.getInbox does not exist in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 09:29:14 --> PROCEDURE n1571149_testmailtracking.getInbox does not exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 09:29:35 --> mysqli_sql_exception: PROCEDURE n1571149_testmailtracking.getInbox does not exist in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 09:29:35 --> PROCEDURE n1571149_testmailtracking.getInbox does not exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 09:29:59 --> mysqli_sql_exception: PROCEDURE n1571149_testmailtracking.getInbox does not exist in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 09:29:59 --> PROCEDURE n1571149_testmailtracking.getInbox does not exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 09:33:42 --> mysqli_sql_exception: PROCEDURE n1571149_testmailtracking.getInbox does not exist in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 09:33:42 --> PROCEDURE n1571149_testmailtracking.getInbox does not exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 09:33:47 --> mysqli_sql_exception: PROCEDURE n1571149_testmailtracking.getInbox does not exist in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 09:33:47 --> PROCEDURE n1571149_testmailtracking.getInbox does not exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 09:33:49 --> mysqli_sql_exception: PROCEDURE n1571149_testmailtracking.getInbox does not exist in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 09:33:49 --> PROCEDURE n1571149_testmailtracking.getInbox does not exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 09:46:54 --> mysqli_sql_exception: PROCEDURE n1571149_testmailtracking.getInbox does not exist in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 09:46:54 --> PROCEDURE n1571149_testmailtracking.getInbox does not exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 09:47:45 --> mysqli_sql_exception: PROCEDURE n1571149_testmailtracking.getInbox does not exist in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 09:47:45 --> PROCEDURE n1571149_testmailtracking.getInbox does not exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 09:48:18 --> mysqli_sql_exception: PROCEDURE n1571149_testmailtracking.getInbox does not exist in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 09:48:18 --> PROCEDURE n1571149_testmailtracking.getInbox does not exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 09:48:19 --> mysqli_sql_exception: PROCEDURE n1571149_testmailtracking.getInbox does not exist in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 09:48:19 --> PROCEDURE n1571149_testmailtracking.getInbox does not exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 09:49:12 --> mysqli_sql_exception: PROCEDURE n1571149_testmailtracking.getInbox does not exist in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 09:49:12 --> PROCEDURE n1571149_testmailtracking.getInbox does not exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 09:49:44 --> mysqli_sql_exception: PROCEDURE n1571149_testmailtracking.getInbox does not exist in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 09:49:44 --> PROCEDURE n1571149_testmailtracking.getInbox does not exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 09:50:07 --> mysqli_sql_exception: PROCEDURE n1571149_testmailtracking.getInbox does not exist in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 09:50:07 --> PROCEDURE n1571149_testmailtracking.getInbox does not exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 09:50:10 --> mysqli_sql_exception: PROCEDURE n1571149_testmailtracking.getInbox does not exist in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 09:50:10 --> PROCEDURE n1571149_testmailtracking.getInbox does not exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 09:50:24 --> mysqli_sql_exception: PROCEDURE n1571149_testmailtracking.getInbox does not exist in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 09:50:24 --> PROCEDURE n1571149_testmailtracking.getInbox does not exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 09:51:04 --> mysqli_sql_exception: PROCEDURE n1571149_testmailtracking.getInbox does not exist in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 09:51:04 --> PROCEDURE n1571149_testmailtracking.getInbox does not exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 09:51:15 --> mysqli_sql_exception: PROCEDURE n1571149_testmailtracking.getInbox does not exist in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 09:51:15 --> PROCEDURE n1571149_testmailtracking.getInbox does not exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 09:52:16 --> mysqli_sql_exception: Incorrect number of arguments for PROCEDURE n1571149_testmailtracking.getInbox; expected 12, got 13 in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 09:52:16 --> Incorrect number of arguments for PROCEDURE n1571149_testmailtracking.getInbox; expected 12, got 13
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 09:53:56 --> mysqli_sql_exception: Unknown column 'ket' in 'field list' in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 09:53:56 --> Unknown column 'ket' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 09:55:12 --> mysqli_sql_exception: Unknown column 'indexNumber' in 'field list' in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 09:55:12 --> Unknown column 'indexNumber' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 09:55:45 --> mysqli_sql_exception: Unknown column 'fileName' in 'field list' in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 09:55:45 --> Unknown column 'fileName' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(39): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 10:17:37 --> mysqli_sql_exception: Incorrect number of arguments for PROCEDURE n1571149_testmailtracking.getInbox; expected 13, got 12 in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(38): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 10:17:37 --> Incorrect number of arguments for PROCEDURE n1571149_testmailtracking.getInbox; expected 13, got 12
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(38): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 10:17:49 --> mysqli_sql_exception: Incorrect number of arguments for PROCEDURE n1571149_testmailtracking.getInbox; expected 13, got 12 in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(38): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 10:17:49 --> Incorrect number of arguments for PROCEDURE n1571149_testmailtracking.getInbox; expected 13, got 12
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(38): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-02-19 10:18:46 --> mysqli_sql_exception: Incorrect number of arguments for PROCEDURE n1571149_testmailtracking.getInbox; expected 13, got 12 in C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CALL getInbox('...', 0)
+#1 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CALL getInbox('...')
+#2 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CALL getInbox('...')
+#3 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Models\ModelInbox.php(38): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?...', Array)
+#4 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\app\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(NULL)
+#5 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+#6 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+#7 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\NOVAL\App\mail-tracking-minerba\mail-tracking\starter\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\NOVAL\\App\\ma...')
+#10 {main}
+CRITICAL - 2023-02-19 10:18:46 --> Incorrect number of arguments for PROCEDURE n1571149_testmailtracking.getInbox; expected 13, got 12
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\ModelInbox.php(38): CodeIgniter\Database\BaseConnection->query('CALL getInbox(?,?,?,?,?,?,?,?,?,?,?,?)', [...])
+ 2 APPPATH\Controllers\Inbox.php(22): App\Models\ModelInbox->getInboxByUnit(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inbox->showData()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inbox))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

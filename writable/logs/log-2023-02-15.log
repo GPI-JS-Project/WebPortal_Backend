@@ -1,0 +1,63 @@
+CRITICAL - 2023-02-15 10:29:20 --> Undefined array key "isUnknown"
+in APPPATH\Models\ModelTracking.php on line 26.
+ 1 APPPATH\Models\ModelTracking.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "isUnknown"', 'APPPATH\\Models\\ModelTracking.php', 26)
+ 2 APPPATH\Controllers\Tracking.php(19): App\Models\ModelTracking->getTracking([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-15 10:29:34 --> Undefined array key "isUnknown"
+in APPPATH\Models\ModelTracking.php on line 26.
+ 1 APPPATH\Models\ModelTracking.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "isUnknown"', 'APPPATH\\Models\\ModelTracking.php', 26)
+ 2 APPPATH\Controllers\Tracking.php(19): App\Models\ModelTracking->getTracking([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-15 10:30:45 --> Undefined array key "isUnknown"
+in APPPATH\Models\ModelTracking.php on line 26.
+ 1 APPPATH\Models\ModelTracking.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "isUnknown"', 'APPPATH\\Models\\ModelTracking.php', 26)
+ 2 APPPATH\Controllers\Tracking.php(19): App\Models\ModelTracking->getTracking([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-15 10:32:53 --> Undefined array key "isUnknown"
+in APPPATH\Models\ModelTracking.php on line 26.
+ 1 APPPATH\Models\ModelTracking.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "isUnknown"', 'APPPATH\\Models\\ModelTracking.php', 26)
+ 2 APPPATH\Controllers\Tracking.php(19): App\Models\ModelTracking->getTracking([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-15 10:34:27 --> Undefined array key "isUnknown"
+in APPPATH\Models\ModelTracking.php on line 26.
+ 1 APPPATH\Models\ModelTracking.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "isUnknown"', 'APPPATH\\Models\\ModelTracking.php', 26)
+ 2 APPPATH\Controllers\Tracking.php(19): App\Models\ModelTracking->getTracking([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-15 10:38:38 --> Undefined array key "isUnknown"
+in APPPATH\Models\ModelTracking.php on line 26.
+ 1 APPPATH\Models\ModelTracking.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "isUnknown"', 'APPPATH\\Models\\ModelTracking.php', 26)
+ 2 APPPATH\Controllers\Tracking.php(19): App\Models\ModelTracking->getTracking([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-15 10:38:48 --> Undefined array key "isUnknown"
+in APPPATH\Models\ModelTracking.php on line 26.
+ 1 APPPATH\Models\ModelTracking.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "isUnknown"', 'APPPATH\\Models\\ModelTracking.php', 26)
+ 2 APPPATH\Controllers\Tracking.php(19): App\Models\ModelTracking->getTracking([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

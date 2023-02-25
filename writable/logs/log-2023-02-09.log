@@ -1,0 +1,24 @@
+CRITICAL - 2023-02-09 08:40:31 --> Wrong NIP
+in APPPATH\Models\ModelOtentikasi.php on line 19.
+ 1 APPPATH\Controllers\Otentikasi.php(46): App\Models\ModelOtentikasi->getEmployee('196708301994031000', '196708301994031000')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Otentikasi->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-09 08:41:00 --> Wrong NIP
+in APPPATH\Models\ModelOtentikasi.php on line 19.
+ 1 APPPATH\Controllers\Otentikasi.php(46): App\Models\ModelOtentikasi->getEmployee('196708301994031000', '196708301994031000')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Otentikasi->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Otentikasi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-09 09:14:45 --> count(): Argument #1 ($value) must be of type Countable|array, stdClass given
+in APPPATH\Controllers\Tracking.php on line 288.
+ 1 APPPATH\Controllers\Tracking.php(288): count(Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Tracking->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tracking))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
